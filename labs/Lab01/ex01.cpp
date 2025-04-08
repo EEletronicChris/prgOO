@@ -37,4 +37,6 @@ int main()
     
     christopher.set_nia("Chris",23,172.8);
     christopher.show_nia();
+
+    return 0;
 }

@@ -60,7 +60,7 @@ public:
     
     void desce(){
         if (local_floor <= 0){
-            cout << "Daqui pra frente só tem chao" << endl;
+            cout << "Nao e possivel descer mais" << endl;
         }
         else{
             local_floor = local_floor - 1;
@@ -88,4 +88,5 @@ int main()
 
     arranhaceu.desce();
 
+    return 0;
 }
