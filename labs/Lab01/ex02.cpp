@@ -26,7 +26,7 @@ class Elevador{
 private:
     int local_floor = 0, total_floors, capacity, passagers;
 public:
-    Elevador (int total_floors, int capacity);  //Construtor
+    Elevador (int total_floors, int capacity);  // Scopo do Construtor
 
     void entra(){
         if (passagers < capacity){
@@ -70,7 +70,7 @@ public:
 
 };
 
-// O que o construtor faz
+// Construtor
 Elevador::Elevador (int tf, int c){
     total_floors = tf;
     capacity = c;
