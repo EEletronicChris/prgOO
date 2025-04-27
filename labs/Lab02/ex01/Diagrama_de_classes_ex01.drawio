@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.14">
+  <diagram name="Página-1" id="g_21G1IJPY-a5tcA5HAr">
+    <mxGraphModel dx="872" dy="465" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oXApKzTXgSc-cDWW8T7z-1" value="Cadastro_Tarefa" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="280" width="160" height="180" as="geometry">
+            <mxRectangle x="330" y="200" width="70" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oXApKzTXgSc-cDWW8T7z-2" value="&lt;div&gt;- Prioridade: float&lt;/div&gt;- Nome: string&lt;div&gt;- Data limite: int&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="oXApKzTXgSc-cDWW8T7z-1" vertex="1">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="oXApKzTXgSc-cDWW8T7z-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="oXApKzTXgSc-cDWW8T7z-1" vertex="1">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="oXApKzTXgSc-cDWW8T7z-4" value="+ set_prioridade()&lt;div&gt;+ set_nome()&lt;/div&gt;&lt;div&gt;+ set_data()&lt;/div&gt;&lt;div&gt;+ calcular_progresso()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="oXApKzTXgSc-cDWW8T7z-1" vertex="1">
+          <mxGeometry y="98" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-9" value="Incluir_subtarefa" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="280" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-10" value="- Subtarefa: string&lt;div&gt;- Data conclusão: int&lt;br&gt;&lt;div&gt;- Progresso: float&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- Is_conclude: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="H61qZxMF-_phB7Sc0iAN-9">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="H61qZxMF-_phB7Sc0iAN-9">
+          <mxGeometry y="100" width="160" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-12" value="+ set_subtarefa()&lt;div&gt;+ set_progresso()&lt;/div&gt;&lt;div&gt;+ set_D_conclusion()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="H61qZxMF-_phB7Sc0iAN-9">
+          <mxGeometry y="110" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-21" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="242" y="358.5" as="sourcePoint" />
+            <mxPoint x="332" y="359" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-22" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="333" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-23" value="Lista_tarefas&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="570" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-24" value="&lt;div&gt;- n_tarefas: int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="H61qZxMF-_phB7Sc0iAN-23">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="H61qZxMF-_phB7Sc0iAN-23">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-26" value="+ add_task()&lt;div&gt;+ remove task()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="H61qZxMF-_phB7Sc0iAN-23">
+          <mxGeometry y="60" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-38" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="H61qZxMF-_phB7Sc0iAN-23">
+          <mxGeometry x="-0.802" y="-10" relative="1" as="geometry">
+            <mxPoint x="144" y="537" as="sourcePoint" />
+            <mxPoint x="143" y="462" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="537" />
+              <mxPoint x="143" y="537" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H61qZxMF-_phB7Sc0iAN-39" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="139" y="465" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
