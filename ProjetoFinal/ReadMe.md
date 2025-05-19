@@ -2,11 +2,11 @@
      width="30%"
      style="padding: 10px">
 
-# << Calculadora de Filtros >>
+# << Calculadora de Filtros Analógicos >>
 
 ## << Descrição breve do domínio do problema >>
 <p>	Neste projeto final da disciplina de Programação Orientada a Objetos visa-se desenvolver um programa em C++ para automatizar o cálculo e análise de 
-filtros eletrônicos, proporcionando uma ferramenta eficiente e precisa. Para contexto, os filtros podem ter por exemplo os seguintes formatos: </p>
+filtros de frequência. Para contexto, os filtros podem ter por exemplo os seguintes formatos: </p>
 
 <div align="center">
 	<figure>
@@ -15,13 +15,18 @@ filtros eletrônicos, proporcionando uma ferramenta eficiente e precisa. Para co
 			 style="padding: 10px">
 		<figcaption>Filtro Passa-Baixa ativo</figcaption>
 	</figure>
+</div>
+
+<div align="center">
 	<figure>
 		<img src="img/Filtro_rejeita_faixa_exemple.png" 
 			 width="30%" 
 			 style="padding: 10px">
 		<figcaption>Filtro Rejeita-Faixa passivo</figcaption>
-	</figure>	 
+	</figure>	
 </div>
+	
+<p></p>
 
 > Repositório destinado para o desenvolvimento do projeto final da disciplina 
 > PRG22107 - Programação orientada objeto. 
