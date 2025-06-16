@@ -6,7 +6,7 @@
 
 ## Descrição Geral do domínio do problema
 
-<p>	O programa deve fornecer, a partir da entrada do usuário, um desenho do 
+<p>		O programa deve fornecer, a partir da entrada do usuário, um desenho do 
 circuito de filtro de frequências, explicitando o valor de todos os componentes,
 e ainda plotar um gráfico com a resposta em frequência do mesmo. </p>
 <p>	A entrada do usuário deve conter:</p>
@@ -20,22 +20,49 @@ e ainda plotar um gráfico com a resposta em frequência do mesmo. </p>
 
 ## Diagrama de Casos de Uso
 
-Apresentar o diagram de casos de uso, identificando as funcionalidades do
-sistema assim como os atores envolvidos
+O diagrama de caso de uso apresentado abaixo indica os seguinte procecesso, 
+partindo das três interaçoes possíveis com o usuário:
+
+<ul>
+	<li> Reinicia ou fecha aplicação. </li>
+	
+	<li> Indica modelo e parâmetros do filtro. </li>
+	<ol>
+		<li> Programa pergunta preferência por circuito serie/paralelo ou com uso de RC ou RL.
+		 Somente se há opções equivalentes disponíveis.</li>
+		<li> Calcula valor dos componentes comforme parâmetros passados. </li>
+		<li> Imprime circuito com todos os componentes definidos.</li>
+	</ol>
+	
+	<li> Solicita gráfico. Obs: Esta opção somente é apresentada quando o circuito
+	já foi desenhado.</li>
+	<ol>
+		<li> Imprime gráfico de resposta em frequência. </li>
+	</ol>
+	
+</ul>
 
 <div align="center">
 	<figure>
 		<img src="img/Diagrama_caso_uso_PJ.png" 
-			 width="60%" 
+			 width="90%" 
 			 style="padding: 10px">
-		<figcaption>"."</figcaption>
+		<figcaption></figcaption>
 	</figure>
 </div>
  
 ## Diagrama de Domínio do problema
 
-Elaborar um diagrama conceitual do domínio do problema.
+<p>		O diagrama de domínio da aplicação é apresentado na figura abaixo.</p>
 
+<div align="center">
+	<figure>
+		<img src="img/Diagrama_dominio_PJ.png" 
+			 width="90%" 
+			 style="padding: 10px">
+		<figcaption></figcaption>
+	</figure>
+</div>
 
 <div align="center">
 

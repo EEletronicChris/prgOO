@@ -5,7 +5,7 @@
 # << Calculadora de Filtros Analógicos >>
 
 ## << Descrição breve do domínio do problema >>
-<p>	Neste projeto final da disciplina de Programação Orientada a Objetos visa-se desenvolver um programa em C++ para automatizar o cálculo e análise de 
+<p>		Neste projeto final da disciplina de Programação Orientada a Objetos visa-se desenvolver um programa em C++ para automatizar o cálculo e análise de 
 filtros de frequência. Para contexto, os filtros podem ter por exemplo os seguintes formatos: </p>
 
 <div align="center">
