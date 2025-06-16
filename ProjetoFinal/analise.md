@@ -25,22 +25,21 @@ partindo das três interaçoes possíveis com o usuário:
 
 <ul>
 	<li> Reinicia ou fecha aplicação. </li>
-	
 	<li> Indica modelo e parâmetros do filtro. </li>
+</ul>
 	<ol>
 		<li> Programa pergunta preferência por circuito serie/paralelo ou com uso de RC ou RL.
 		 Somente se há opções equivalentes disponíveis.</li>
 		<li> Calcula valor dos componentes comforme parâmetros passados. </li>
 		<li> Imprime circuito com todos os componentes definidos.</li>
 	</ol>
-	
+<ul>
 	<li> Solicita gráfico. Obs: Esta opção somente é apresentada quando o circuito
 	já foi desenhado.</li>
+</ul>
 	<ol>
 		<li> Imprime gráfico de resposta em frequência. </li>
 	</ol>
-	
-</ul>
 
 <div align="center">
 	<figure>
