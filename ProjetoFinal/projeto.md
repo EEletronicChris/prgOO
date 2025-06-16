@@ -26,7 +26,7 @@ visto que são as únicas que podem possuir mais de um objeto simultâneo. </p>
 <p> 	No entanto, reconhecendo-se a complexidade do primeiro diagrama, um segundo
 foi elaborado, objetivando mais simplicidade, porém com a desvantagem de sobrecarregar 
 as classes com muitos métodos, além de que muitos atributos podem não ser usados e as
-funções fiquem mais complexas de implementar, visto que são mais genéricas. O diagrama
+funções podem ficar mais complexas de implementar, visto que são mais genéricas. O diagrama
  de classe equivalente é apresentado abaixo:</p>
 
 <div align="center">
