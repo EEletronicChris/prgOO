@@ -56,6 +56,20 @@ do usuário.</p>
 	</figure>
 </div>
 
+<p>
+	O diagrama de sequência abaixo segue as classes do segundo diagrama de classes apresentado.
+Percebe-se que, apesar da diferença de dimesões, a execução é a mesma.</p>
+
+<div align="center">
+	<figure>
+		<img src="img/Diagrama_de_sequencia_PJ_V2.png" 
+			 width="100%" 
+			 style="padding: 10px">
+		<figcaption></figcaption>
+	</figure>
+</div>
+
+
 <div align="center">
 
 [Retroceder](analise.md) | [Avançar](implementacao.md)
