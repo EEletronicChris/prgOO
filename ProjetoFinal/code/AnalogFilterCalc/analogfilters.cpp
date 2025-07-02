@@ -1,4 +1,5 @@
 #include "analogfilters.h"
+#include "filtroativo.h"
 
 analogFilters::analogFilters(QWidget *parent) : QWidget(parent), filterType_combo(nullptr)
 {
@@ -12,7 +13,7 @@ analogFilters::analogFilters(QWidget *parent) : QWidget(parent), filterType_comb
     filterTypeConfirm_button -> resize(68,30);
     reInit_button -> resize(80,30);
 
-    filterTypeConfirm_button -> hide(); // Só aparece quando a combo estiver visível
+    filterTypeConfirm_button -> hide();
 
 
     connect(passiveFilter_button, &QPushButton::clicked, this, &analogFilters::showComboPassives);
@@ -68,19 +69,10 @@ void analogFilters::saveFilterType()
 {
     if (filterType_combo) {
         filterType_savings = filterType_combo->currentText();
-        // Apenas para depuração: imprime no terminal
-        qDebug("Filtro selecionado: %s", filterType_savings.toUtf8().constData());
     }
-/*
-    if (filterType_savings == "Passa-baixa Ativo" || filterType_savings == "Passa-alta Ativo" || filterType_savings == "Passa-faixa Ativo" || filterType_savings == "Rejeita-faixa Ativo" ) {
-        Cria e mostra o filtro ativo
-        filtroAtivo *filtro = new filtroAtivo(this);
-        filtro->resize(width(), height());
-        filtro->show();
-        filtro->get_gain_value();
-    }
-    */
+
 }
+
 
 void analogFilters::reInitAplication()
 {

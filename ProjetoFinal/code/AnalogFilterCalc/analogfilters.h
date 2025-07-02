@@ -5,7 +5,6 @@
 #include <QPushButton>
 #include <QComboBox>
 #include <QLineEdit>
-#include "filtroativo.h"
 
 
 class analogFilters : public QWidget {
@@ -22,6 +21,9 @@ private slots:
     void showComboActives();
     void saveFilterType();
     void reInitAplication();
+    void showLowerCutFrequency_input();
+    void showUpperCutFrequency_input();
+    void showCentralCutFrequency_input();
 
 private:
     QPushButton *passiveFilter_button;
@@ -31,7 +33,11 @@ private:
 
     QComboBox   *filterType_combo;
 
-    QString filterType_savings;
+    QString     filterType_savings;
+
+    QLineEdit   *showLowerCutFrequency_LineEdit;
+    QLineEdit   *showUpperCutFrequency_LineEdit;
+    QLineEdit   *showCentralCutFrequency_LineEdit;
 
     void reposicionarElementos();
 };
