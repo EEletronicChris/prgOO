@@ -10,10 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     analogfilters.cpp \
+    filtroativo.cpp \
+    filtropassivo.cpp \
     main.cpp
 
 HEADERS += \
-    analogfilters.h
+    analogfilters.h \
+    filtroativo.h \
+    filtropassivo.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

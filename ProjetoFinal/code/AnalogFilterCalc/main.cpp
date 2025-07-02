@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
 
     analogFilters janela;
     janela.resize(600, 400);
-    janela.setWindowTitle("Filtros Analógicos");
+    janela.setWindowTitle("Calculadora de Filtros Analógicos");
     janela.show();
 
     return app.exec();
