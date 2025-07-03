@@ -14,8 +14,7 @@ void FiltroPassaBaixa_passivo::exibirImagem(QWidget *parent, const QString &tipo
 
     if (tipoFiltro == "Passivo passa-baixa") {
         QPixmap imagem("img/Filtro_rejeita_faixa_exemple.png");
-        if (imagem.isNull()) {
-            qDebug("Imagem não carregada!");
+
         } else {
             imagemLabel->setPixmap(imagem);
             imagemLabel->show();

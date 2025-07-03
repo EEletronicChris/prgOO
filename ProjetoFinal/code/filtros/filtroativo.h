@@ -5,8 +5,9 @@
 #include <QLabel>
 #include <QString>
 #include <QWidget>
+#include "filtros.h"
 
-class FiltroAtivo {
+class FiltroAtivo : public Filtros {
 public:
     FiltroAtivo();
     void atualizarCampos(QWidget *parent, const QString &tipoFiltro);
@@ -14,10 +15,7 @@ public:
 private:
     QLineEdit *ganhoEdit;
     QLabel *ganhoLabel;
-    QLineEdit *frequenciaEdit;
-    QLabel *frequenciaLabel;
 
-    void esconderCampos();
 };
 
 #endif // FILTROATIVO_H

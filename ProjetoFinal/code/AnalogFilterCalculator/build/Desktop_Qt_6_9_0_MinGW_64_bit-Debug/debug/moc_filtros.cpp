@@ -7,7 +7,6 @@
 *****************************************************************************/
 
 #include "../../../filtros.h"
-#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -52,7 +51,7 @@ template <> constexpr inline auto Filtros::qt_create_metaobjectdata<qt_meta_tag_
             qt_methods, qt_properties, qt_enums);
 }
 Q_CONSTINIT const QMetaObject Filtros::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7FiltrosE_t>.stringdata,
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7FiltrosE_t>.data,
     qt_static_metacall,
@@ -80,12 +79,12 @@ void *Filtros::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7FiltrosE_t>.strings))
         return static_cast<void*>(this);
-    return QObject::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
 int Filtros::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QObject::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

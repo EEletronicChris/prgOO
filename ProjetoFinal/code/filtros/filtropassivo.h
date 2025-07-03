@@ -5,19 +5,15 @@
 #include <QLabel>
 #include <QString>
 #include <QWidget>
+#include "filtros.h"
 
-class FiltroPassivo {
+class FiltroPassivo : public Filtros {
 public:
     FiltroPassivo();
     void atualizarCampos(QWidget *parent, const QString &tipoFiltro);
 
 private:
-    QLineEdit *freqInfEdit;
-    QLineEdit *freqSupEdit;
-    QLabel *freqInfLabel;
-    QLabel *freqSupLabel;
 
-    void esconderCampos();
 };
 
 #endif // FILTROPASSIVO_H

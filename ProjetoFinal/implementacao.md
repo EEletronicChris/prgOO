@@ -9,10 +9,12 @@
 	<div align="center">commit 5183ec98b966ee5952e8c56a166a20ace268e025</div>
 	<li>	Implementação dos primeiros botões sem função: Botões de seleção inicial (filtro passivo ou ativo).</li>
 	<li>	Implementeção de protótipo de autoajuste de <I>widgets</I> na classe "analogFilters".</li>
+	<div align="center">commit 5183ec98b966ee5952e8c56a166a20ace268e025</div>
 	<li>	Implementação de comboBox: 1 comboBox é gerada com opções derivadas de filtro passivo ou ativo.</li>
-	<li>	Implementeção de botão de confirmação da opção de tipo de filtro escolhido.</li>
 	<li>	Implementação de botão de reiniciar. // Este deve ser implementado depois, visto que deve considerear varios casos de uso
 	ainda não implementados.</li>
+	<div align="center">commit 1afb2ba9eea9d26aebbabd2fbde28b88fc0ef909</div>
+	<li>	Implementaçaão das caixas de preenchimento QLineEdits conforme filtro selecionado</li>
 	<li>	</li>
 </ol>
 
