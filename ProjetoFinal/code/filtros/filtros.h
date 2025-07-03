@@ -2,7 +2,6 @@
 #define FILTROS_H
 
 #include <QObject>
-#include <QStringList>
 #include <QComboBox>
 
 class Filtros : public QObject {
@@ -15,5 +14,3 @@ public:
 };
 
 #endif // FILTROS_H
-
-

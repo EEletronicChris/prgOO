@@ -10,12 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     filtroativo.cpp \
+    filtropassabaixa_ativo.cpp \
+    filtropassabaixa_passivo.cpp \
+    filtropassivo.cpp \
     filtros.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     filtroativo.h \
+    filtropassabaixa_ativo.h \
+    filtropassabaixa_passivo.h \
+    filtropassivo.h \
     filtros.h \
     mainwindow.h
 

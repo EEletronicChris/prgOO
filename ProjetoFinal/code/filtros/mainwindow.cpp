@@ -1,49 +1,46 @@
 #include "mainwindow.h"
-#include "filtros.h"
-#include "filtroativo.h"
 
-#include <QPushButton>
-#include <QComboBox>
-#include <QHBoxLayout>
+MainWindow::MainWindow(QWidget *parent) : QWidget(parent) {
+    this->resize(550, 350);
+    this->setWindowTitle("Projeto de Filtros");
 
-MainWindow::MainWindow() {
-    mainLayout = new QVBoxLayout();
+    // Botões
+    btnPassivo = new QPushButton("Filtros Passivos", this);
+    btnAtivo = new QPushButton("Filtros Ativos", this);
+    btnPassivo->move(10, 10);
+    btnPassivo->resize(120, 30);
+    btnAtivo->move(140, 10);
+    btnAtivo->resize(120, 30);
 
-    // Layouts auxiliares
-    QHBoxLayout *buttonLayout = new QHBoxLayout();
-    QVBoxLayout *inputLayout = new QVBoxLayout();
+    // ComboBox
+    comboBox = new QComboBox(this);
+    comboBox->move(10, 50);
+    comboBox->resize(250, 25);
 
-    // Widgets
-    QPushButton *btnPassivo = new QPushButton("Filtros Passivos");
-    QPushButton *btnAtivo = new QPushButton("Filtros Ativos");
-    QComboBox *comboBox = new QComboBox();
-
-    // Instâncias das classes
-    Filtros *filtros = new Filtros();
-    FiltroAtivo *filtroAtivo = new FiltroAtivo();
+    // Instâncias das classes auxiliares
+    filtros = new Filtros(this);
+    filtroAtivo = new FiltroAtivo();
+    filtroPassivo = new FiltroPassivo();
+    filtroImagemAtivo = new FiltroPassaBaixa_ativo();
+    filtroImagemPassivo = new FiltroPassaBaixa_passivo();
 
     // Conexões
-    QObject::connect(btnPassivo, &QPushButton::clicked, [=]() {
-        filtros->carregarPassivos(comboBox);
-    });
-
-    QObject::connect(btnAtivo, &QPushButton::clicked, [=]() {
-        filtros->carregarAtivos(comboBox);
-    });
-
-    QObject::connect(comboBox, &QComboBox::currentTextChanged, [=](const QString &text) {
-        filtroAtivo->atualizarCampos(inputLayout, text);
-    });
-
-    // Montagem da interface
-    buttonLayout->addWidget(btnPassivo);
-    buttonLayout->addWidget(btnAtivo);
-
-    mainLayout->addLayout(buttonLayout);
-    mainLayout->addWidget(comboBox);
-    mainLayout->addLayout(inputLayout);
+    connect(btnPassivo, SIGNAL(clicked()), this, SLOT(carregarPassivos()));
+    connect(btnAtivo, SIGNAL(clicked()), this, SLOT(carregarAtivos()));
+    connect(comboBox, SIGNAL(currentTextChanged(QString)), this, SLOT(filtroSelecionado(QString)));
 }
 
-QVBoxLayout *MainWindow::getLayout() {
-    return mainLayout;
+void MainWindow::carregarPassivos() {
+    filtros->carregarPassivos(comboBox);
+}
+
+void MainWindow::carregarAtivos() {
+    filtros->carregarAtivos(comboBox);
+}
+
+void MainWindow::filtroSelecionado(const QString &text) {
+    filtroAtivo->atualizarCampos(this, text);
+    filtroPassivo->atualizarCampos(this, text);
+    filtroImagemAtivo->exibirImagem(this, text);
+    filtroImagemPassivo->exibirImagem(this, text);
 }

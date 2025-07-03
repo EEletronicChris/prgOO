@@ -1,27 +1,23 @@
 #ifndef FILTROATIVO_H
 #define FILTROATIVO_H
 
-#include <QObject>
 #include <QLineEdit>
 #include <QLabel>
 #include <QString>
 #include <QWidget>
-#include <QVBoxLayout>
 
-class FiltroAtivo : public QObject {
-    Q_OBJECT
-
+class FiltroAtivo {
 public:
-    explicit FiltroAtivo(QObject *parent = nullptr);
-    void atualizarCampos(QVBoxLayout *layout, const QString &tipoFiltro);
+    FiltroAtivo();
+    void atualizarCampos(QWidget *parent, const QString &tipoFiltro);
 
 private:
     QLineEdit *ganhoEdit;
-    QLineEdit *frequenciaEdit;
     QLabel *ganhoLabel;
+    QLineEdit *frequenciaEdit;
     QLabel *frequenciaLabel;
 
-    void limparCampos(QVBoxLayout *layout);
+    void esconderCampos();
 };
 
 #endif // FILTROATIVO_H

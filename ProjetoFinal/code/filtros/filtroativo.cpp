@@ -1,43 +1,46 @@
 #include "filtroativo.h"
 
-FiltroAtivo::FiltroAtivo(QObject *parent) : QObject(parent),
-    ganhoEdit(nullptr), frequenciaEdit(nullptr),
-    ganhoLabel(nullptr), frequenciaLabel(nullptr) {}
+FiltroAtivo::FiltroAtivo() : ganhoEdit(nullptr), ganhoLabel(nullptr), frequenciaEdit(nullptr), frequenciaLabel(nullptr) {}
 
-void FiltroAtivo::limparCampos(QVBoxLayout *layout) {
-    if (ganhoLabel) layout->removeWidget(ganhoLabel);
-    if (ganhoEdit) layout->removeWidget(ganhoEdit);
-    if (frequenciaLabel) layout->removeWidget(frequenciaLabel);
-    if (frequenciaEdit) layout->removeWidget(frequenciaEdit);
-
-    delete ganhoLabel;
-    delete ganhoEdit;
-    delete frequenciaLabel;
-    delete frequenciaEdit;
-
-    ganhoLabel = nullptr;
-    ganhoEdit = nullptr;
-    frequenciaLabel = nullptr;
-    frequenciaEdit = nullptr;
+void FiltroAtivo::esconderCampos() {
+    if (ganhoLabel) ganhoLabel->hide();
+    if (ganhoEdit) ganhoEdit->hide();
+    if (frequenciaLabel) frequenciaLabel->hide();
+    if (frequenciaEdit) frequenciaEdit->hide();
 }
 
-void FiltroAtivo::atualizarCampos(QVBoxLayout *layout, const QString &tipoFiltro) {
-    limparCampos(layout);
+void FiltroAtivo::atualizarCampos(QWidget *parent, const QString &tipoFiltro) {
+    esconderCampos();
 
-    if (tipoFiltro == "Ativo passa-baixa" || tipoFiltro == "Ativo passa-alta") {
-        ganhoLabel = new QLabel("Ganho:");
-        ganhoEdit = new QLineEdit();
+    if (!tipoFiltro.startsWith("Ativo")) return;
 
-        frequenciaLabel = new QLabel(
-            tipoFiltro == "Ativo passa-baixa" ?
-                "Frequência de corte inferior:" :
-                "Frequência de corte superior:"
-            );
-        frequenciaEdit = new QLineEdit();
-
-        layout->addWidget(ganhoLabel);
-        layout->addWidget(ganhoEdit);
-        layout->addWidget(frequenciaLabel);
-        layout->addWidget(frequenciaEdit);
+    if (!ganhoLabel) {
+        ganhoLabel = new QLabel(parent);
+        ganhoEdit = new QLineEdit(parent);
+        frequenciaLabel = new QLabel(parent);
+        frequenciaEdit = new QLineEdit(parent);
     }
+
+    ganhoLabel->setText("Ganho:");
+    ganhoLabel->move(10, 90);
+    ganhoLabel->resize(180, 25);
+    ganhoEdit->move(200, 90);
+    ganhoEdit->resize(100, 25);
+    ganhoLabel->show();
+    ganhoEdit->show();
+
+    if (tipoFiltro == "Ativo passa-baixa") {
+        frequenciaLabel->setText("Frequência de corte inferior:");
+    } else if (tipoFiltro == "Ativo passa-alta") {
+        frequenciaLabel->setText("Frequência de corte superior:");
+    } else {
+        frequenciaLabel->setText("Frequência:");
+    }
+
+    frequenciaLabel->move(10, 130);
+    frequenciaLabel->resize(180, 25);
+    frequenciaEdit->move(200, 130);
+    frequenciaEdit->resize(100, 25);
+    frequenciaLabel->show();
+    frequenciaEdit->show();
 }

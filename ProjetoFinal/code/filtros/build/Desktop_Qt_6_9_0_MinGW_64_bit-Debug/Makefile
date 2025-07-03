@@ -281,6 +281,7 @@ Makefile: ../../filtros.pro C:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/qt_config.prf \
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++/qmake.conf \
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/exclusive_builds.prf \
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/toolchain.prf \
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/default_pre.prf \
@@ -310,7 +311,6 @@ Makefile: ../../filtros.pro C:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++
 		C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6Gui.prl \
 		C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6Core.prl \
 		C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\..\filtros.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/spec_pre.prf:
@@ -524,6 +524,7 @@ C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/qt_functions.prf:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/qt_config.prf:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++/qmake.conf:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/exclusive_builds.prf:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/toolchain.prf:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/default_pre.prf:
@@ -553,7 +554,6 @@ C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6Widgets.prl:
 C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6Gui.prl:
 C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6Core.prl:
 C:/Program_study/QT/6.9.0/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 C:/Program_study/QT/6.9.0/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\filtros.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"

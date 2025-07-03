@@ -1,0 +1,13 @@
+debug/filtroativo.o
+debug/filtropassabaixa_ativo.o
+debug/filtropassabaixa_passivo.o
+debug/filtropassivo.o
+debug/filtros.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_filtroativo.o
+debug/moc_filtropassabaixa_ativo.o
+debug/moc_filtropassabaixa_passivo.o
+debug/moc_filtropassivo.o
+debug/moc_filtros.o
+debug/moc_mainwindow.o
