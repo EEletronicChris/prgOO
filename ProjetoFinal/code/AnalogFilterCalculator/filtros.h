@@ -3,6 +3,10 @@
 
 #include <QWidget>
 #include <QString>
+#include <QPushButton>
+#include <QComboBox>
+#include <QLineEdit>
+#include <QLabel>
 
 class Filtros : public QWidget {
     Q_OBJECT
@@ -20,6 +24,17 @@ protected:
     float lower_cut_frequency;
     float upper_cut_frequency;
     float central_frequency;
+
+private slots:
+    void carregarFiltrosPassivos();
+    void carregarFiltrosAtivos();
+    void atualizarFiltroSelecionado();
+
+private:
+    QPushButton *botaoPassivo;
+    QPushButton *botaoAtivo;
+    QComboBox *filtersType_combo;
+
 };
 
 #endif
