@@ -18,6 +18,7 @@ public:
     void get_lower_cut_frequency();
     void get_upper_cut_frequency();
     void get_central_frequency();
+    void hide_all_edit();
 
 protected:
     QString filter_type;
@@ -34,6 +35,12 @@ private:
     QPushButton *botaoPassivo;
     QPushButton *botaoAtivo;
     QComboBox *filtersType_combo;
+    QLineEdit *centralFreq_edit;
+    QLabel *centralFreq_label;
+    QLineEdit *supFreq_edit;
+    QLabel *supFreq_label;
+    QLineEdit *infFreq_edit;
+    QLabel *infFreq_label;
 
 };
 

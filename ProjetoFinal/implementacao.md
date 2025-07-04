@@ -9,6 +9,8 @@
 <ol>
 	<div align="center">commit 1a8f401f5decc5890dc167239cc6a5bba82feff2</div>
 	<li>	Criação de todas as classes com protótipos. Métodos sem função.</li>
+	<div align="center">commit 3223e38c64e547b99172c6c284d28fc71d0321ae</div>
+	<li>	Adição dos primeiros botões ("Calcular filtro passivo" e "Calcular filtro ativo") e comboBox funcional.</li>
 
 	<li>	</li>
 </ol>

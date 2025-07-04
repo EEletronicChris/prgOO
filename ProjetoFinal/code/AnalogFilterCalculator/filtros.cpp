@@ -1,8 +1,42 @@
 #include "Filtros.h"
 
+Filtros::Filtros(QWidget *parent) :
+    QWidget(parent), botaoPassivo(nullptr), botaoAtivo(nullptr), filtersType_combo(nullptr),
+    centralFreq_edit(nullptr), centralFreq_label(nullptr), supFreq_edit(nullptr),
+    supFreq_label(nullptr), infFreq_edit(nullptr), infFreq_label(nullptr)
+{
+    // Criação dos Widgets
+    centralFreq_edit    = new QLineEdit(this);
+    centralFreq_label   = new QLabel("Frequência de corte (Hz):", this);
+    supFreq_edit        = new QLineEdit(this);
+    supFreq_label       = new QLabel("Frequência de corte superior (Hz):", this);
+    infFreq_edit        = new QLineEdit(this);
+    infFreq_label       = new QLabel("Frequência de corte inferior (Hz):", this);
 
+    // Posicionamento e tamanho do Widget
+    centralFreq_label->move(10, 90);
+    centralFreq_label->resize(180, 30);
+    centralFreq_edit->move(216, 90);
+    centralFreq_edit->resize(100, 30);
 
-Filtros::Filtros(QWidget *parent) : QWidget(parent), botaoPassivo(nullptr), botaoAtivo(nullptr), filtersType_combo(nullptr) {}
+    supFreq_label->move(10, 130);
+    supFreq_label->resize(180, 30);
+    supFreq_edit->move(216, 130);
+    supFreq_edit->resize(100, 30);
+
+    infFreq_label->move(10, 90);
+    infFreq_label->resize(180, 30);
+    infFreq_edit->move(216, 90);
+    infFreq_edit->resize(100, 30);
+
+    // Esconde inicialmente
+    centralFreq_edit->hide();
+    centralFreq_label->hide();
+    supFreq_edit->hide();
+    supFreq_label->hide();
+    infFreq_edit->hide();
+    infFreq_label->hide();
+}
 
 // Trocar para seleção manual de tamanho
 void Filtros::get_filter_type()
@@ -31,13 +65,28 @@ void Filtros::get_filter_type()
     connect(filtersType_combo, &QComboBox::currentTextChanged, this, &Filtros::atualizarFiltroSelecionado);
 }
 
-void Filtros::get_lower_cut_frequency() {}
+void Filtros::get_lower_cut_frequency()
+{
+    infFreq_edit->show();
+    infFreq_label->show();
+}
 
-void Filtros::get_upper_cut_frequency() {}
+void Filtros::get_upper_cut_frequency()
+{
+    hide_all_edit();
+
+    supFreq_edit->show();
+    supFreq_label->show();
+}
 
 void Filtros::get_central_frequency()
 {
+    hide_all_edit();
 
+    centralFreq_edit->show();
+    centralFreq_label->show();
+
+    qDebug() << "Filtro selecionado:" << filter_type;
 }
 
 
@@ -62,9 +111,22 @@ void Filtros::carregarFiltrosAtivos()
 void Filtros::atualizarFiltroSelecionado()
 {
     filter_type = filtersType_combo->currentText();
-    qDebug() << "Filtro selecionado:" << filter_type;
+    if (filter_type == "Filtro Passivo Passa-baixa" || filter_type == "Filtro Ativo Passa-baixa" || filter_type == "Filtro Passivo Passa-alta"  || filter_type == "Filtro Ativo Passa-alta") {
+        get_central_frequency();
+    }
+    if (filter_type == "Filtro Passivo Rejeita-faixa" || filter_type == "Filtro Ativo Rejeita-faixa" || filter_type == "Filtro Passivo Passa-faixa"  || filter_type == "Filtro Ativo Passa-faixa"){
+        get_upper_cut_frequency();
+        get_lower_cut_frequency();
+    }
 
 }
 
-
-
+void Filtros::hide_all_edit()
+{
+    centralFreq_edit->hide();
+    centralFreq_label->hide();
+    supFreq_edit->hide();
+    supFreq_label->hide();
+    infFreq_edit->hide();
+    infFreq_label->hide();
+}
