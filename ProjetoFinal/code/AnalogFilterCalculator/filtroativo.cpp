@@ -2,4 +2,5 @@
 
 FiltroAtivo::FiltroAtivo(QWidget *parent) : Filtros(parent) {}
 
-void FiltroAtivo::get_gain_value() {}
+void FiltroAtivo::get_gain_value() {
+}

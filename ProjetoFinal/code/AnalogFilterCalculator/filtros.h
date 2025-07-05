@@ -19,6 +19,7 @@ public:
     void get_upper_cut_frequency();
     void get_central_frequency();
     void hide_all_edit();
+    void get_gain_value();
 
 protected:
     QString filter_type;
@@ -32,15 +33,22 @@ private slots:
     void atualizarFiltroSelecionado();
 
 private:
+    // Botões da janela inicial
     QPushButton *botaoPassivo;
     QPushButton *botaoAtivo;
+    QPushButton *botaoConfirmAll;
+    // Seleção de filtros
     QComboBox *filtersType_combo;
+    // Campos de preenchimento
     QLineEdit *centralFreq_edit;
-    QLabel *centralFreq_label;
     QLineEdit *supFreq_edit;
-    QLabel *supFreq_label;
     QLineEdit *infFreq_edit;
+    QLineEdit *gainValue_edit;
+    // Campos de texto
+    QLabel *centralFreq_label;
+    QLabel *supFreq_label;
     QLabel *infFreq_label;
+    QLabel *gainValue_label;
 
 };
 

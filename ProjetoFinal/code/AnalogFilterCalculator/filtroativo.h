@@ -3,9 +3,9 @@
 
 #include "filtros.h"
 
-class FiltroAtivo : public Filtros {
+class FiltroAtivo : public Filtros
+{
     Q_OBJECT
-
 public:
     explicit FiltroAtivo(QWidget *parent = nullptr);
 
