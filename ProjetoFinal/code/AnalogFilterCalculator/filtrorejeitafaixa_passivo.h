@@ -9,6 +9,8 @@ class FiltroRejeitaFaixa_passivo : public FiltroPassivo
 public:
     explicit FiltroRejeitaFaixa_passivo(QWidget *parent = nullptr);
 
+    FiltroRejeitaFaixa_passivo(QWidget *parent, float fInf, float fSup);
+
     void draw_reject_band_passive_S();
 
     void draw_reject_band_passive_P();
@@ -17,10 +19,11 @@ public:
 
 protected:
     float resistor_value;
-
     float capacitor_value;
-
     float inductor_value;
+
+    float lower_cut_frequency;
+    float upper_cut_frequency;
 };
 
 #endif

@@ -9,6 +9,8 @@ class FiltroPassaAlta_passivo : public FiltroPassivo {
 public:
     explicit FiltroPassaAlta_passivo(QWidget *parent = nullptr);
 
+    FiltroPassaAlta_passivo(QWidget *parent, float fCent);
+
     void draw_high_pass_passive_RC();
 
     void draw_high_pass_passive_RL();
@@ -17,12 +19,11 @@ public:
 
 protected:
     float resistor_value;
-
     float capacitor_value;
-
     float inductor_value;
-
     bool inductor_presence;
+
+    float central_frequency;
 };
 
 #endif
