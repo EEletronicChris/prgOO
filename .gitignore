@@ -2,5 +2,5 @@
 *.exe
 *.o
 ProjetoFinal/Drawio/
-ProjetoFinal/code/AnalogFilterCalc
-ProjetoFinal/code/filtros
+ProjetoFinal/code/AnalogFilterCalc/
+ProjetoFinal/code/filtros/

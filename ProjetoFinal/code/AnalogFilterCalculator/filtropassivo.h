@@ -13,7 +13,7 @@ public:
 
     void get_choose_S_P();
 
-    virtual void filtro_plot_prepare_passivo();
+    void filtro_plot_prepare_passivo();
 
 protected:
     bool component_preference;

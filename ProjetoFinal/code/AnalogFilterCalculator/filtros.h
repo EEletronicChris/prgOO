@@ -20,15 +20,16 @@ public:
     void get_upper_cut_frequency();
     void get_central_frequency();
     void hide_all_edit();
-    void get_gain_value();
     void show_both_freq_edit();
     void show_one_freq_edit();
 
-protected:
+private:
     QString filter_type;
+    QLineEdit *gainValue_edit;
     float lower_cut_frequency;
     float upper_cut_frequency;
     float central_frequency;
+    float gain_value;
 
 private slots:
     void carregarFiltrosPassivos();
@@ -47,13 +48,11 @@ private:
     QLineEdit *centralFreq_edit;
     QLineEdit *supFreq_edit;
     QLineEdit *infFreq_edit;
-    QLineEdit *gainValue_edit;
     // Campos de texto
     QLabel *centralFreq_label;
     QLabel *supFreq_label;
     QLabel *infFreq_label;
     QLabel *gainValue_label;
-
 };
 
 #endif

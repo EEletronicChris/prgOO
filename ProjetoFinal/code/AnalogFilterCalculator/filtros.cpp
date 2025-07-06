@@ -141,12 +141,12 @@ void Filtros::confirmarFiltroSelecionado()
     get_central_frequency();
     get_upper_cut_frequency();
     get_lower_cut_frequency();
+    gain_value = gainValue_edit->text().toFloat();
 
     // Verifica se Input é float
     if (central_frequency == 0 && (upper_cut_frequency == 0 || lower_cut_frequency == 0)){
         QMessageBox::about(this,"", "Insira um valor de frequência e/ou ganho válido");
-    }
-    else {
+    } else{
         hide_all_edit();
         botaoConfirmAll->hide();
         botaoAtivo->hide();
@@ -154,7 +154,8 @@ void Filtros::confirmarFiltroSelecionado()
         filtersType_combo->hide();
 
         if (filter_type.contains("Ativo")) {
-            FiltroAtivo *filtroConfig_ativo = new FiltroAtivo(this);
+            FiltroAtivo *filtroConfig_ativo = new FiltroAtivo(this, gain_value, lower_cut_frequency, central_frequency, upper_cut_frequency);
+            qDebug() << "Ganho1: " << gain_value;
             filtroConfig_ativo->filtro_plot_prepare_ativo();
         } else{
             FiltroPassivo *filtroConfig_passivo = new FiltroPassivo(this);

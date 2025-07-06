@@ -9,12 +9,19 @@ class FiltroAtivo : public Filtros
 public:
     explicit FiltroAtivo(QWidget *parent = nullptr);
 
-    void get_gain_value();
+    FiltroAtivo(QWidget *parent, float ganho, float fInf, float fCent, float fSup);
+
+    virtual void get_gain_value();
 
     virtual void filtro_plot_prepare_ativo();
 
-protected:
+private:
+    float lower_cut_frequency;
+    float upper_cut_frequency;
+    float central_frequency;
     float gain_value;
+
+
 };
 
 #endif
