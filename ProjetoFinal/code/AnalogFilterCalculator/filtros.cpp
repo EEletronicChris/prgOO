@@ -56,6 +56,12 @@ Filtros::Filtros(QWidget *parent) :
     gainValue_edit->resize(100, 30);
     gainValue_label->resize(180, 30);
 
+    // Cor dos Widgets
+    botaoPassivo->setStyleSheet("background-color: #1C1C1C");
+    botaoAtivo->setStyleSheet("background-color: #1C1C1C");
+    botaoConfirmAll->setStyleSheet("background-color: #1C1C1C");
+    filtersType_combo->setStyleSheet("background-color: #1C1C1C");
+
     // Esconde inicialmente
     hide_all_edit();
     botaoConfirmAll->hide();

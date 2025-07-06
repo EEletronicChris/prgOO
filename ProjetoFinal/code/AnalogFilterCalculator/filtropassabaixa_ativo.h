@@ -9,16 +9,21 @@ class FiltroPassaBaixa_ativo : public FiltroAtivo {
 public:
     explicit FiltroPassaBaixa_ativo(QWidget *parent = nullptr);
 
+    FiltroPassaBaixa_ativo(QWidget *parent, float ganho, float fCent);
+
     void draw_low_pass_active();
 
    virtual void components_calc();
 
-protected:
+private:
     float resistor_i_value;
-
     float resistor_f_value;
-
     float capacitor_value;
+
+    float central_frequency;
+    float gain_value;
+
+
 
 };
 
