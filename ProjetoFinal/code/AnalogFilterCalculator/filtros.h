@@ -23,7 +23,7 @@ public:
     void show_both_freq_edit();
     void show_one_freq_edit();
 
-private:
+protected:
     QString filter_type;
     QLineEdit *gainValue_edit;
     float lower_cut_frequency;

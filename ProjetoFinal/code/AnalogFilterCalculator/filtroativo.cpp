@@ -6,25 +6,24 @@
 
 FiltroAtivo::FiltroAtivo(QWidget *parent) : Filtros(parent) {}
 
-FiltroAtivo::FiltroAtivo(QWidget *parent, float ganho, float fInf, float fCent, float fSup) : Filtros(parent) {
+FiltroAtivo::FiltroAtivo(QWidget *parent, float ganho, float fInf, float fCent, float fSup, QString tipo) : Filtros(parent) {
     this->gain_value = ganho;
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;
     this->central_frequency = fCent;
+    this->filter_type = tipo;
 
-    qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency << " central: " << central_frequency;
+    qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency << " central: " << central_frequency << "ganho: " << gain_value;
 }
 
 void FiltroAtivo::get_gain_value() {
     if (gain_value == 0){
         QMessageBox::about(this, "", "Valor de ganho considerado de 0 dB");
-        qDebug() << "Chegou até aqui";
     }
-
 }
 
 void FiltroAtivo::filtro_plot_prepare_ativo()
 {
-    qDebug() << "Ganho2: " << gain_value;
+    qDebug() << "tipo:  " << filter_type;
     get_gain_value();
 }

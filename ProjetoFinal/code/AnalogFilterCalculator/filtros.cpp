@@ -154,11 +154,10 @@ void Filtros::confirmarFiltroSelecionado()
         filtersType_combo->hide();
 
         if (filter_type.contains("Ativo")) {
-            FiltroAtivo *filtroConfig_ativo = new FiltroAtivo(this, gain_value, lower_cut_frequency, central_frequency, upper_cut_frequency);
-            qDebug() << "Ganho1: " << gain_value;
+            FiltroAtivo *filtroConfig_ativo = new FiltroAtivo(this, gain_value, lower_cut_frequency, central_frequency, upper_cut_frequency, filter_type);
             filtroConfig_ativo->filtro_plot_prepare_ativo();
         } else{
-            FiltroPassivo *filtroConfig_passivo = new FiltroPassivo(this);
+            FiltroPassivo *filtroConfig_passivo = new FiltroPassivo(this, lower_cut_frequency, central_frequency, upper_cut_frequency, filter_type);
             filtroConfig_passivo->filtro_plot_prepare_passivo();
         }
     }
