@@ -11,6 +11,10 @@
 	<li>	Criação de todas as classes com protótipos. Métodos sem função.</li>
 	<div align="center">commit 3223e38c64e547b99172c6c284d28fc71d0321ae</div>
 	<li>	Adição dos primeiros botões ("Calcular filtro passivo" e "Calcular filtro ativo") e comboBox funcional.</li>
+	<div align="center">commit 8252ebc735adf96c0e7d66d7ffef8ae77f39cc30</div>
+	<li>	Adição dos campos de preenchimento.</li>
+	<div align="center">commit  dda989568ebef7d48925878c1c9fa49457252406</div>
+	<li>	Adição dos campos de ganho e botão de confirmar.</li>
 
 	<li>	</li>
 </ol>
@@ -32,6 +36,9 @@
 		Botão de reiniciar
 	
 	4 -> Imprime o Circuito escolhido
+	
+	5 -> Opção de reiniciar e de imprimir gráfico
+		 Opção de reiniciar destroi os objetos criados para evitar memory leak
 	
 	*Outras funções
 		Depois de calcular -> Opção de abrir nova janela com o gráfico

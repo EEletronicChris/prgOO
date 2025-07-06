@@ -11,6 +11,8 @@ public:
 
     void get_gain_value();
 
+    virtual void filtro_plot_prepare_ativo();
+
 protected:
     float gain_value;
 };

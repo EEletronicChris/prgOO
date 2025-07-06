@@ -7,6 +7,8 @@
 #include <QComboBox>
 #include <QLineEdit>
 #include <QLabel>
+#include <QDebug>
+#include <QMessageBox>
 
 class Filtros : public QWidget {
     Q_OBJECT
@@ -14,12 +16,13 @@ class Filtros : public QWidget {
 public:
     explicit Filtros(QWidget *parent = nullptr);
 
-    void get_filter_type();
     void get_lower_cut_frequency();
     void get_upper_cut_frequency();
     void get_central_frequency();
     void hide_all_edit();
     void get_gain_value();
+    void show_both_freq_edit();
+    void show_one_freq_edit();
 
 protected:
     QString filter_type;
@@ -30,7 +33,8 @@ protected:
 private slots:
     void carregarFiltrosPassivos();
     void carregarFiltrosAtivos();
-    void atualizarFiltroSelecionado();
+    void get_filter_type();
+    void confirmarFiltroSelecionado();
 
 private:
     // Botões da janela inicial

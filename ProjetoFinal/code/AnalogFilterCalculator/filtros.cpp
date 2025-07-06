@@ -1,4 +1,6 @@
 #include "filtros.h"
+#include "filtroativo.h"
+#include "filtropassivo.h"
 
 
 Filtros::Filtros(QWidget *parent) :
@@ -8,17 +10,25 @@ Filtros::Filtros(QWidget *parent) :
     gainValue_label(nullptr)    //Avaliar retirar variaveis-membro
 {
     // Criação dos Widgets
+    // Botões
+    botaoPassivo        = new QPushButton("Calcular um Filtro Passivo", this);
+    botaoAtivo          = new QPushButton("Calcular um Filtro Ativo", this);
+    botaoConfirmAll     = new QPushButton("Confirmar",this);
+    // comboBox
+    filtersType_combo   = new QComboBox(this);
+    // LineEdits
     centralFreq_edit    = new QLineEdit(this);
-    centralFreq_label   = new QLabel("Frequência de corte (Hz):", this);
     supFreq_edit        = new QLineEdit(this);
-    supFreq_label       = new QLabel("Frequência de corte superior (Hz):", this);
     infFreq_edit        = new QLineEdit(this);
-    infFreq_label       = new QLabel("Frequência de corte inferior (Hz):", this);
     gainValue_edit      = new QLineEdit(this);
+    // Labels
+    centralFreq_label   = new QLabel("Frequência de corte (Hz):", this);
+    supFreq_label       = new QLabel("Frequência de corte superior (Hz):", this);
+    infFreq_label       = new QLabel("Frequência de corte inferior (Hz):", this);
     gainValue_label     = new QLabel("Ganho:", this);
 
 
-    // Posicionamento e tamanho do W idget
+    // Posicionamento e tamanho do Widgets
     centralFreq_label->move(10, 90);
     centralFreq_label->resize(180, 30);
     centralFreq_edit->move(216, 90);
@@ -34,94 +44,65 @@ Filtros::Filtros(QWidget *parent) :
     infFreq_edit->move(216, 90);
     infFreq_edit->resize(100, 30);
 
-    gainValue_edit->resize(100, 30);
-    gainValue_label->resize(180, 30);
-
-    // Esconde inicialmente
-    centralFreq_edit->hide();
-    centralFreq_label->hide();
-    supFreq_edit->hide();
-    supFreq_label->hide();
-    infFreq_edit->hide();
-    infFreq_label->hide();
-    gainValue_edit->hide();
-    gainValue_label->hide();
-}
-
-void Filtros::get_filter_type()
-{
-    // Criação de botões e comboBox
-    botaoPassivo        = new QPushButton("Calcular um Filtro Passivo", this);
-    botaoAtivo          = new QPushButton("Calcular um Filtro Ativo", this);
-    botaoConfirmAll     = new QPushButton("Confirmar",this);
-    filtersType_combo   = new QComboBox(this);
-
-    // Posicionamento e tamanho
     botaoPassivo->move(10, 10);
     botaoPassivo->resize(200, 30);
     botaoAtivo->move(220, 10);
     botaoAtivo->resize(200, 30);
+    botaoConfirmAll->resize(94,30);
+
     filtersType_combo->move(115, 50);
     filtersType_combo->resize(200, 30);
-    botaoConfirmAll->resize(94,30);
+
+    gainValue_edit->resize(100, 30);
+    gainValue_label->resize(180, 30);
+
+    // Esconde inicialmente
+    hide_all_edit();
+    botaoConfirmAll->hide();
 
     // Exibe
     botaoPassivo->show();
     botaoAtivo->show();
     filtersType_combo->show();
 
-    // Esconde
-    botaoConfirmAll->hide();
-
     // Signal & Slots conexões
     connect(botaoPassivo, &QPushButton::clicked, this, &Filtros::carregarFiltrosPassivos);
     connect(botaoAtivo, &QPushButton::clicked, this, &Filtros::carregarFiltrosAtivos);
-    connect(filtersType_combo, &QComboBox::currentTextChanged, this, &Filtros::atualizarFiltroSelecionado);
+    connect(filtersType_combo, &QComboBox::currentTextChanged, this, &Filtros::get_filter_type);
+    connect(botaoConfirmAll, &QPushButton::clicked,this,&Filtros::confirmarFiltroSelecionado);
+}
+
+void Filtros::get_filter_type()
+{
+    filter_type = filtersType_combo->currentText();
+    if (filter_type == "Filtro Passivo Passa-baixa" || filter_type == "Filtro Ativo Passa-baixa" || filter_type == "Filtro Passivo Passa-alta"  || filter_type == "Filtro Ativo Passa-alta") {
+        show_one_freq_edit();
+    }
+    if (filter_type == "Filtro Passivo Rejeita-faixa" || filter_type == "Filtro Ativo Rejeita-faixa" || filter_type == "Filtro Passivo Passa-faixa"  || filter_type == "Filtro Ativo Passa-faixa"){
+        show_both_freq_edit();
+    }
 }
 
 void Filtros::get_lower_cut_frequency()
 {
-    infFreq_edit->show();
-    infFreq_label->show();
+    lower_cut_frequency = infFreq_edit->text().toFloat();
 
-    if (filtersType_combo->currentText().contains("Ativo")) {
-        gainValue_label->move(10, 170);
-        gainValue_edit->move(216, 170);
-        botaoConfirmAll->move(326, 170);
+    qDebug() << "Frequência inferior: " << lower_cut_frequency;
 
-        gainValue_edit->show();
-        gainValue_label->show();
-    } else{
-        botaoConfirmAll->move(326, 130);
-    }
 }
 
 void Filtros::get_upper_cut_frequency()
 {
-    hide_all_edit();
+    upper_cut_frequency = supFreq_edit->text().toFloat();
 
-    supFreq_edit->show();
-    supFreq_label->show();
+    qDebug() << "Frequência superior: " << upper_cut_frequency;
 }
 
 void Filtros::get_central_frequency()
 {
-    hide_all_edit();
+    central_frequency = centralFreq_edit->text().toFloat();
 
-    centralFreq_edit->show();
-    centralFreq_label->show();
-    botaoConfirmAll->show();
-
-    if (filtersType_combo->currentText().contains("Ativo")){
-        gainValue_label->move(10, 130);
-        gainValue_edit->move(216, 130);
-        botaoConfirmAll->move(326, 130);
-
-        gainValue_edit->show();
-        gainValue_label->show();
-    } else {
-        botaoConfirmAll->move(326, 90);
-    }
+    qDebug() << "Frequência central: " << central_frequency;
 }
 
 
@@ -143,18 +124,6 @@ void Filtros::carregarFiltrosAtivos()
     filtersType_combo->addItem("Filtro Ativo Passa-faixa");
 }
 
-void Filtros::atualizarFiltroSelecionado()
-{
-    filter_type = filtersType_combo->currentText();
-    if (filter_type == "Filtro Passivo Passa-baixa" || filter_type == "Filtro Ativo Passa-baixa" || filter_type == "Filtro Passivo Passa-alta"  || filter_type == "Filtro Ativo Passa-alta") {
-        get_central_frequency();
-    }
-    if (filter_type == "Filtro Passivo Rejeita-faixa" || filter_type == "Filtro Ativo Rejeita-faixa" || filter_type == "Filtro Passivo Passa-faixa"  || filter_type == "Filtro Ativo Passa-faixa"){
-        get_upper_cut_frequency();
-        get_lower_cut_frequency();
-    }
-}
-
 void Filtros::hide_all_edit()
 {
     centralFreq_edit->hide();
@@ -165,4 +134,73 @@ void Filtros::hide_all_edit()
     infFreq_label->hide();
     gainValue_edit->hide();
     gainValue_label->hide();
+}
+
+void Filtros::confirmarFiltroSelecionado()
+{
+    get_central_frequency();
+    get_upper_cut_frequency();
+    get_lower_cut_frequency();
+
+    // Verifica se Input é float
+    if (central_frequency == 0 && (upper_cut_frequency == 0 || lower_cut_frequency == 0)){
+        QMessageBox::about(this,"", "Insira um valor de frequência e/ou ganho válido");
+    }
+    else {
+        hide_all_edit();
+        botaoConfirmAll->hide();
+        botaoAtivo->hide();
+        botaoPassivo->hide();
+        filtersType_combo->hide();
+
+        if (filter_type.contains("Ativo")) {
+            FiltroAtivo *filtroConfig_ativo = new FiltroAtivo(this);
+            filtroConfig_ativo->filtro_plot_prepare_ativo();
+        } else{
+            FiltroPassivo *filtroConfig_passivo = new FiltroPassivo(this);
+            filtroConfig_passivo->filtro_plot_prepare_passivo();
+        }
+    }
+}
+
+
+void Filtros::show_both_freq_edit()
+{
+    hide_all_edit();
+
+    supFreq_edit->show();
+    supFreq_label->show();
+    infFreq_edit->show();
+    infFreq_label->show();
+
+    if (filter_type.contains("Ativo")) {
+        gainValue_label->move(10, 170);
+        gainValue_edit->move(216, 170);
+        botaoConfirmAll->move(326, 170);
+
+        gainValue_edit->show();
+        gainValue_label->show();
+    } else{
+        botaoConfirmAll->move(326, 130);
+    }
+}
+void Filtros::show_one_freq_edit()
+{
+    hide_all_edit();
+
+    centralFreq_edit->show();
+    centralFreq_label->show();
+    botaoConfirmAll->show();
+
+    if (filter_type.contains("Ativo")){
+        gainValue_label->move(10, 130);
+        gainValue_edit->move(216, 130);
+        botaoConfirmAll->move(326, 130);
+
+        gainValue_edit->show();
+        gainValue_label->show();
+    } else {
+        botaoConfirmAll->move(326, 90);
+    }
+
 }

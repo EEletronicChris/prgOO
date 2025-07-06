@@ -43,7 +43,8 @@ template <> constexpr inline auto Filtros::qt_create_metaobjectdata<qt_meta_tag_
         "carregarFiltrosPassivos",
         "",
         "carregarFiltrosAtivos",
-        "atualizarFiltroSelecionado"
+        "get_filter_type",
+        "confirmarFiltroSelecionado"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -51,8 +52,10 @@ template <> constexpr inline auto Filtros::qt_create_metaobjectdata<qt_meta_tag_
         QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'carregarFiltrosAtivos'
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'atualizarFiltroSelecionado'
+        // Slot 'get_filter_type'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'confirmarFiltroSelecionado'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,7 +81,8 @@ void Filtros::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         switch (_id) {
         case 0: _t->carregarFiltrosPassivos(); break;
         case 1: _t->carregarFiltrosAtivos(); break;
-        case 2: _t->atualizarFiltroSelecionado(); break;
+        case 2: _t->get_filter_type(); break;
+        case 3: _t->confirmarFiltroSelecionado(); break;
         default: ;
         }
     }
@@ -104,14 +108,14 @@ int Filtros::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }
