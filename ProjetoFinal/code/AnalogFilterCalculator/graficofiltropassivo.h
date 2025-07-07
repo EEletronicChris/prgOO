@@ -10,9 +10,8 @@ class GraficoFiltroPassivo : public FiltroPassivo {
 public:
     explicit GraficoFiltroPassivo(QWidget *parent = nullptr);
 
-    virtual void draw_graph();
+    void draw_graph();
 
-protected:
 
 };
 

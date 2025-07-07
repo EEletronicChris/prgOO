@@ -9,6 +9,8 @@
 #include <QLabel>
 #include <QDebug>
 #include <QMessageBox>
+#include <QPixmap>
+
 
 class Filtros : public QWidget {
     Q_OBJECT
@@ -23,7 +25,7 @@ public:
     void show_both_freq_edit();
     void show_one_freq_edit();
 
-protected:
+private:
     QString filter_type;
     QLineEdit *gainValue_edit;
     float lower_cut_frequency;

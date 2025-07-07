@@ -13,9 +13,9 @@ public:
 
     void draw_pass_band_active();
 
-    virtual void components_calc();
+    void components_calc();
 
-protected:
+private:
     float resistor_R_value;
     float resistor_i_value;
     float resistor_f_value;

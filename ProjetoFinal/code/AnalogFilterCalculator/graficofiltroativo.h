@@ -10,9 +10,8 @@
 public:
     explicit GraficoFiltroAtivo(QWidget *parent = nullptr);
 
-    virtual void draw_graph();
+    void draw_graph();
 
-protected:
 
 };
 

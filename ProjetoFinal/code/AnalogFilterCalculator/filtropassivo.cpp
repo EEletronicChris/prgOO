@@ -26,17 +26,21 @@ void FiltroPassivo::filtro_plot_prepare_passivo()
     if (filter_type == "Filtro Passivo Passa-baixa"){
         FiltroPassaBaixa_passivo *filt = new FiltroPassaBaixa_passivo(this, central_frequency);
         filt->components_calc();
+        filt->show();
     }
     if (filter_type == "Filtro Passivo Passa-alta"){
         FiltroPassaAlta_passivo *filt = new FiltroPassaAlta_passivo(this, central_frequency);
         filt->components_calc();
+        filt->show();
     }
     if (filter_type == "Filtro Passivo Rejeita-faixa"){
         FiltroRejeitaFaixa_passivo *filt = new FiltroRejeitaFaixa_passivo(this, lower_cut_frequency, upper_cut_frequency);
         filt->components_calc();
+        filt->show();
     }
     if (filter_type == "Filtro Passivo Passa-faixa"){
         FiltroPassaFaixa_passivo *filt = new FiltroPassaFaixa_passivo(this, lower_cut_frequency, upper_cut_frequency);
         filt->components_calc();
+        filt->show();
     }
 }

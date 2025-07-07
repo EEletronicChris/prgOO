@@ -15,9 +15,9 @@ public:
 
     void draw_low_pass_passive_RL();
 
-    virtual void components_calc();
+    void components_calc();
 
-protected:
+private:
     float resistor_value;
     float capacitor_value;
     float inductor_value;

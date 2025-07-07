@@ -11,9 +11,9 @@ public:
 
     FiltroAtivo(QWidget *parent, float ganho, float fInf, float fCent, float fSup, QString tipo);
 
-    virtual void get_gain_value();
+    void get_gain_value();
 
-    virtual void filtro_plot_prepare_ativo();
+    void filtro_plot_prepare_ativo();
 
 private:
     float lower_cut_frequency;

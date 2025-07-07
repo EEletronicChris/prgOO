@@ -13,7 +13,7 @@ public:
 
     void draw_low_pass_active();
 
-   virtual void components_calc();
+   void components_calc();
 
 private:
     float resistor_i_value;
@@ -22,8 +22,7 @@ private:
 
     float central_frequency;
     float gain_value;
-
-
+    QLabel *imageLabel;
 
 };
 

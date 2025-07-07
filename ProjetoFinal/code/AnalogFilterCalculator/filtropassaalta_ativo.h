@@ -13,16 +13,16 @@ public:
 
     void draw_high_pass_active();
 
-    virtual void components_calc();
+    void components_calc();
 
-protected:
+private:
     float resistor_i_value;
     float resistor_f_value;
     float capacitor_value;
 
     float central_frequency;
     float gain_value;
-
+    QLabel *imageLabel;
 };
 
 #endif

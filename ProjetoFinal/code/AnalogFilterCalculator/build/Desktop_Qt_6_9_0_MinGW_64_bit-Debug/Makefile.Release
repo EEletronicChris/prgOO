@@ -181,7 +181,7 @@ compiler_moc_header_make_all: release/moc_filtroativo.cpp release/moc_filtropass
 compiler_moc_header_clean:
 	-$(DEL_FILE) release\moc_filtroativo.cpp release\moc_filtropassaalta_ativo.cpp release\moc_filtropassaalta_passivo.cpp release\moc_filtropassabaixa_ativo.cpp release\moc_filtropassabaixa_passivo.cpp release\moc_filtropassafaixa_ativo.cpp release\moc_filtropassafaixa_passivo.cpp release\moc_filtropassivo.cpp release\moc_filtrorejeitafaixa_ativo.cpp release\moc_filtrorejeitafaixa_passivo.cpp release\moc_filtros.cpp release\moc_graficofiltroativo.cpp release\moc_graficofiltropassivo.cpp
 release/moc_filtroativo.cpp: ../../filtroativo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -380,13 +380,47 @@ release/moc_filtroativo.cpp: ../../filtroativo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtroativo.h -o release\moc_filtroativo.cpp
 
 release/moc_filtropassaalta_ativo.cpp: ../../filtropassaalta_ativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -585,13 +619,47 @@ release/moc_filtropassaalta_ativo.cpp: ../../filtropassaalta_ativo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassaalta_ativo.h -o release\moc_filtropassaalta_ativo.cpp
 
 release/moc_filtropassaalta_passivo.cpp: ../../filtropassaalta_passivo.h \
-		../../FiltroPassivo.h \
-		../../Filtros.h \
+		../../filtropassivo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -790,13 +858,47 @@ release/moc_filtropassaalta_passivo.cpp: ../../filtropassaalta_passivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassaalta_passivo.h -o release\moc_filtropassaalta_passivo.cpp
 
 release/moc_filtropassabaixa_ativo.cpp: ../../filtropassabaixa_ativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -995,13 +1097,47 @@ release/moc_filtropassabaixa_ativo.cpp: ../../filtropassabaixa_ativo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassabaixa_ativo.h -o release\moc_filtropassabaixa_ativo.cpp
 
 release/moc_filtropassabaixa_passivo.cpp: ../../filtropassabaixa_passivo.h \
-		../../FiltroPassivo.h \
-		../../Filtros.h \
+		../../filtropassivo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1200,13 +1336,47 @@ release/moc_filtropassabaixa_passivo.cpp: ../../filtropassabaixa_passivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassabaixa_passivo.h -o release\moc_filtropassabaixa_passivo.cpp
 
 release/moc_filtropassafaixa_ativo.cpp: ../../filtropassafaixa_ativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1405,13 +1575,47 @@ release/moc_filtropassafaixa_ativo.cpp: ../../filtropassafaixa_ativo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassafaixa_ativo.h -o release\moc_filtropassafaixa_ativo.cpp
 
 release/moc_filtropassafaixa_passivo.cpp: ../../filtropassafaixa_passivo.h \
 		../../filtropassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1610,12 +1814,46 @@ release/moc_filtropassafaixa_passivo.cpp: ../../filtropassafaixa_passivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassafaixa_passivo.h -o release\moc_filtropassafaixa_passivo.cpp
 
 release/moc_filtropassivo.cpp: ../../filtropassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -1814,13 +2052,47 @@ release/moc_filtropassivo.cpp: ../../filtropassivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtropassivo.h -o release\moc_filtropassivo.cpp
 
 release/moc_filtrorejeitafaixa_ativo.cpp: ../../filtrorejeitafaixa_ativo.h \
 		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -2019,13 +2291,47 @@ release/moc_filtrorejeitafaixa_ativo.cpp: ../../filtrorejeitafaixa_ativo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtrorejeitafaixa_ativo.h -o release\moc_filtrorejeitafaixa_ativo.cpp
 
 release/moc_filtrorejeitafaixa_passivo.cpp: ../../filtrorejeitafaixa_passivo.h \
 		../../filtropassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -2224,6 +2530,40 @@ release/moc_filtrorejeitafaixa_passivo.cpp: ../../filtrorejeitafaixa_passivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtrorejeitafaixa_passivo.h -o release\moc_filtrorejeitafaixa_passivo.cpp
@@ -2427,13 +2767,47 @@ release/moc_filtros.cpp: ../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\filtros.h -o release\moc_filtros.cpp
 
 release/moc_graficofiltroativo.cpp: ../../graficofiltroativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -2632,51 +3006,47 @@ release/moc_graficofiltroativo.cpp: ../../graficofiltroativo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractAxis \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractaxis.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartGlobal \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartglobal.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtcharts-config.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtchartsexports.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPen \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QFont \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QVariant \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChart \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchart.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLegend \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlegend.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsWidget \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainterpath.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QBrush \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QMargins \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainter.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLineSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlineseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QXYSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qxyseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QImage \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\graficofiltroativo.h -o release\moc_graficofiltroativo.cpp
 
 release/moc_graficofiltropassivo.cpp: ../../graficofiltropassivo.h \
 		../../FiltroPassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -2875,44 +3245,40 @@ release/moc_graficofiltropassivo.cpp: ../../graficofiltropassivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractAxis \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractaxis.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartGlobal \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartglobal.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtcharts-config.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtchartsexports.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPen \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QFont \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QVariant \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChart \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchart.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLegend \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlegend.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsWidget \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainterpath.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QBrush \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QMargins \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainter.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLineSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlineseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QXYSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qxyseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QImage \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		release/moc_predefs.h \
 		C:/Program_study/QT/6.9.0/mingw_64/bin/moc.exe
 	C:\Program_study\QT\6.9.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Program_study/QT/6.9.0/mingw_64/mkspecs/win32-g++ -IC:/Facul/Fase_7_Engenharia_Eletronica/PRG_OObjetos/Programs/ProjetoFinal/code/AnalogFilterCalculator -IC:/Program_study/QT/6.9.0/mingw_64/include -IC:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets -IC:/Program_study/QT/6.9.0/mingw_64/include/QtGui -IC:/Program_study/QT/6.9.0/mingw_64/include/QtCore -I. -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Program_study/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Program_study/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include ..\..\graficofiltropassivo.h -o release\moc_graficofiltropassivo.cpp
@@ -2940,8 +3306,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 
 ####### Compile
 
-release/filtroativo.o: ../../filtroativo.cpp ../../FiltroAtivo.h \
-		../../Filtros.h \
+release/filtroativo.o: ../../filtroativo.cpp ../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -3139,12 +3505,51 @@ release/filtroativo.o: ../../filtroativo.cpp ../../FiltroAtivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
+		../../filtropassaalta_ativo.h \
+		../../filtropassabaixa_ativo.h \
+		../../filtropassafaixa_ativo.h \
+		../../filtrorejeitafaixa_ativo.h \
+		../../FiltroAtivo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtroativo.o ..\..\filtroativo.cpp
 
 release/filtropassaalta_ativo.o: ../../filtropassaalta_ativo.cpp ../../FiltroPassaAlta_ativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -3342,12 +3747,46 @@ release/filtropassaalta_ativo.o: ../../filtropassaalta_ativo.cpp ../../FiltroPas
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassaalta_ativo.o ..\..\filtropassaalta_ativo.cpp
 
 release/filtropassaalta_passivo.o: ../../filtropassaalta_passivo.cpp ../../FiltroPassaAlta_passivo.h \
-		../../FiltroPassivo.h \
-		../../Filtros.h \
+		../../filtropassivo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -3545,12 +3984,46 @@ release/filtropassaalta_passivo.o: ../../filtropassaalta_passivo.cpp ../../Filtr
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassaalta_passivo.o ..\..\filtropassaalta_passivo.cpp
 
 release/filtropassabaixa_ativo.o: ../../filtropassabaixa_ativo.cpp ../../FiltroPassaBaixa_ativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -3748,12 +4221,46 @@ release/filtropassabaixa_ativo.o: ../../filtropassabaixa_ativo.cpp ../../FiltroP
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassabaixa_ativo.o ..\..\filtropassabaixa_ativo.cpp
 
 release/filtropassabaixa_passivo.o: ../../filtropassabaixa_passivo.cpp ../../FiltroPassaBaixa_passivo.h \
-		../../FiltroPassivo.h \
-		../../Filtros.h \
+		../../filtropassivo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -3951,12 +4458,46 @@ release/filtropassabaixa_passivo.o: ../../filtropassabaixa_passivo.cpp ../../Fil
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassabaixa_passivo.o ..\..\filtropassabaixa_passivo.cpp
 
 release/filtropassafaixa_ativo.o: ../../filtropassafaixa_ativo.cpp ../../filtropassafaixa_ativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -4154,12 +4695,46 @@ release/filtropassafaixa_ativo.o: ../../filtropassafaixa_ativo.cpp ../../filtrop
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassafaixa_ativo.o ..\..\filtropassafaixa_ativo.cpp
 
 release/filtropassafaixa_passivo.o: ../../filtropassafaixa_passivo.cpp ../../filtropassafaixa_passivo.h \
 		../../filtropassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -4357,11 +4932,45 @@ release/filtropassafaixa_passivo.o: ../../filtropassafaixa_passivo.cpp ../../fil
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassafaixa_passivo.o ..\..\filtropassafaixa_passivo.cpp
 
-release/filtropassivo.o: ../../filtropassivo.cpp ../../FiltroPassivo.h \
-		../../Filtros.h \
+release/filtropassivo.o: ../../filtropassivo.cpp ../../filtropassivo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -4559,12 +5168,50 @@ release/filtropassivo.o: ../../filtropassivo.cpp ../../FiltroPassivo.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
+		../../filtropassaalta_passivo.h \
+		../../filtropassabaixa_passivo.h \
+		../../filtropassafaixa_passivo.h \
+		../../filtrorejeitafaixa_passivo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtropassivo.o ..\..\filtropassivo.cpp
 
 release/filtrorejeitafaixa_ativo.o: ../../filtrorejeitafaixa_ativo.cpp ../../filtrorejeitafaixa_ativo.h \
 		../../FiltroAtivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -4762,12 +5409,46 @@ release/filtrorejeitafaixa_ativo.o: ../../filtrorejeitafaixa_ativo.cpp ../../fil
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtrorejeitafaixa_ativo.o ..\..\filtrorejeitafaixa_ativo.cpp
 
 release/filtrorejeitafaixa_passivo.o: ../../filtrorejeitafaixa_passivo.cpp ../../filtrorejeitafaixa_passivo.h \
 		../../filtropassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -4965,12 +5646,46 @@ release/filtrorejeitafaixa_passivo.o: ../../filtrorejeitafaixa_passivo.cpp ../..
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtrorejeitafaixa_passivo.o ..\..\filtrorejeitafaixa_passivo.cpp
 
-release/graficofiltroativo.o: ../../graficofiltroativo.cpp ../../graficofiltroativo.h \
-		../../FiltroAtivo.h \
-		../../Filtros.h \
+release/graficofiltroativo.o: ../../graficofiltroativo.cpp ../../GraficoFiltroAtivo.h \
+		../../filtroativo.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -5169,49 +5884,45 @@ release/graficofiltroativo.o: ../../graficofiltroativo.cpp ../../graficofiltroat
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractAxis \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractaxis.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartGlobal \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartglobal.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtcharts-config.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtchartsexports.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPen \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QFont \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QVariant \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChart \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchart.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLegend \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlegend.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsWidget \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainterpath.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QBrush \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QMargins \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainter.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLineSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlineseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QXYSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qxyseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QImage
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\graficofiltroativo.o ..\..\graficofiltroativo.cpp
 
-release/graficofiltropassivo.o: ../../graficofiltropassivo.cpp ../../graficofiltropassivo.h \
+release/graficofiltropassivo.o: ../../graficofiltropassivo.cpp ../../GraficoFiltroPassivo.h \
 		../../FiltroPassivo.h \
-		../../Filtros.h \
+		../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -5410,8 +6121,42 @@ release/graficofiltropassivo.o: ../../graficofiltropassivo.cpp ../../graficofilt
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchartview.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QValueAxis \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qvalueaxis.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractAxis \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractaxis.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChartGlobal \
@@ -5419,35 +6164,8 @@ release/graficofiltropassivo.o: ../../graficofiltropassivo.cpp ../../graficofilt
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtcharts-config.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qtchartsexports.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPen \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QFont \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QVariant \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QAbstractSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qabstractseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QChart \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qchart.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLegend \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlegend.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsWidget \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicswidget.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicslayoutitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsitem.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainterpath.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QBrush \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QMargins \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QGraphicsView \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsview.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpainter.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qgraphicsscene.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QLineSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qlineseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/QXYSeries \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCharts/qxyseries.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QImage
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QVariant
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\graficofiltropassivo.o ..\..\graficofiltropassivo.cpp
 
 release/main.o: ../../main.cpp ../../filtros.h \
@@ -5649,11 +6367,45 @@ release/main.o: ../../main.cpp ../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
 
-release/filtros.o: ../../filtros.cpp ../../Filtros.h \
+release/filtros.o: ../../filtros.cpp ../../filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QWidget \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -5851,7 +6603,43 @@ release/filtros.o: ../../filtros.cpp ../../Filtros.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qlocale.h \
 		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
-		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QString \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QPushButton \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextformat.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpen.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qtextoption.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QLabel \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/qpicture.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtCore/QDebug \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Program_study/QT/6.9.0/mingw_64/include/QtGui/QPixmap \
+		../../filtroativo.h \
+		../../filtropassivo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\filtros.o ..\..\filtros.cpp
 
 release/moc_filtroativo.o: release/moc_filtroativo.cpp 

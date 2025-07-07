@@ -17,10 +17,10 @@ public:
 
     void filtro_plot_prepare_passivo();
 
-protected:
+private:
     bool component_preference;
     bool choose_S_P;
-private:
+
     float lower_cut_frequency;
     float upper_cut_frequency;
     float central_frequency;
