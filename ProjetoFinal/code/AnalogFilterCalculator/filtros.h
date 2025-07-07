@@ -24,6 +24,8 @@ public:
     void hide_all_edit();
     void show_both_freq_edit();
     void show_one_freq_edit();
+    void resetarInterface();
+
 
 private:
     QString filter_type;
@@ -39,13 +41,14 @@ private slots:
     void get_filter_type();
     void confirmarFiltroSelecionado();
 
-private:
+protected:
     // Botões da janela inicial
     QPushButton *botaoPassivo;
     QPushButton *botaoAtivo;
     QPushButton *botaoConfirmAll;
     // Seleção de filtros
     QComboBox *filtersType_combo;
+private:
     // Campos de preenchimento
     QLineEdit *centralFreq_edit;
     QLineEdit *supFreq_edit;

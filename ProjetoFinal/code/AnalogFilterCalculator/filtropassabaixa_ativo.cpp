@@ -7,19 +7,20 @@ FiltroPassaBaixa_ativo::FiltroPassaBaixa_ativo(QWidget *parent, float ganho, flo
     this->central_frequency = fCent;
 
     qDebug() << " central: " << central_frequency << "ganho: " << gain_value;
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
-    imageLabel->resize(400, 300);
-    imageLabel->move(100, 50);
+    imageLabel->resize(904, 580);
+    imageLabel->move(10, 10);
 
     QPixmap imagem("images/FiltroPassaBaixa_ativo.png");
     imageLabel->setPixmap(imagem);
-    imageLabel->show();
+
 
 }
 
 void FiltroPassaBaixa_ativo::draw_low_pass_active() {
-
+    imageLabel->show();
 }
 
 void FiltroPassaBaixa_ativo::components_calc() {

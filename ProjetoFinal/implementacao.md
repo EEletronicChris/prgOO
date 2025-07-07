@@ -17,6 +17,8 @@
 	<li>	Adição dos campos de ganho e botão de confirmar.</li>
 	<div align="center">commit  73bef6c4b03ac248f7ed2e08d96b980d1cfdbd04</div>
 	<li>	Classe Filtros completa e preparação da classe FiltroAtivo </li>
+	<div align="center">commit  ....</div>
+	<li>	Impressão dos circuitos de cada tipo de filtro. </li>
 	
 	
 </ol>

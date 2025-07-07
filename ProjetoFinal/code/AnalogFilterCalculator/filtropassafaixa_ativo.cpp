@@ -8,8 +8,22 @@ FiltroPassaFaixa_ativo::FiltroPassaFaixa_ativo(QWidget *parent, float ganho, flo
     this->upper_cut_frequency = fSup;
 
     qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency << "ganho: " << gain_value;
+
+    imageLabel = new QLabel(this);
+    imageLabel->setScaledContents(true);
+    imageLabel->resize(1120, 337);
+    imageLabel->move(10, 10);
+
+    QPixmap imagem("images/FiltroPassaFaixa_ativo.png");
+    imageLabel->setPixmap(imagem);
 }
 
-void FiltroPassaFaixa_ativo::draw_pass_band_active(){}
+void FiltroPassaFaixa_ativo::draw_pass_band_active()
+{
+    imageLabel->show();
+}
 
-void FiltroPassaFaixa_ativo::components_calc() {}
+void FiltroPassaFaixa_ativo::components_calc()
+{
+    draw_pass_band_active();
+}

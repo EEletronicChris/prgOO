@@ -8,9 +8,23 @@ FiltroRejeitaFaixa_ativo::FiltroRejeitaFaixa_ativo(QWidget *parent, float ganho,
     this->upper_cut_frequency = fSup;
 
     qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency <<  "ganho: " << gain_value;
+
+    imageLabel = new QLabel(this);
+    imageLabel->setScaledContents(true);
+    imageLabel->resize(890, 512);
+    imageLabel->move(10, 10);
+
+    QPixmap imagem("images/FiltroRejeitaFaixa_ativo.png");
+    imageLabel->setPixmap(imagem);
 }
 
-void FiltroRejeitaFaixa_ativo::draw_reject_band_active() {}
+void FiltroRejeitaFaixa_ativo::draw_reject_band_active()
+{
+    imageLabel->show();
+}
 
-void FiltroRejeitaFaixa_ativo::components_calc() {}
+void FiltroRejeitaFaixa_ativo::components_calc()
+{
+    draw_reject_band_active();
+}
 

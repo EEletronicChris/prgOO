@@ -25,6 +25,11 @@ private:
     float lower_cut_frequency;
     float upper_cut_frequency;
     float gain_value;
+
+    QLabel *imageLabel;
+    QLabel *resistor_R_label;
+
+    QString floatToText;
 };
 
 #endif

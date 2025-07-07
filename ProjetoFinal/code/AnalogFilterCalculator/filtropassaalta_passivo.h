@@ -24,6 +24,11 @@ private:
     bool inductor_presence;
 
     float central_frequency;
+
+    QLabel *imageLabel;
+    QLabel *resistor_label;
+
+    QString floatToText;
 };
 
 #endif

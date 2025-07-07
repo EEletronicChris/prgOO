@@ -212,3 +212,35 @@ void Filtros::show_one_freq_edit()
     }
 
 }
+
+void Filtros::resetarInterface()
+{
+    // Fecha e deleta todos os filhos que não são os widgets principais
+    const auto childrenList = this->findChildren<QWidget *>(QString(), Qt::FindDirectChildrenOnly);
+    for (QWidget *child : childrenList) {
+        if (child != botaoPassivo && child != botaoAtivo &&
+            child != filtersType_combo && child != botaoConfirmAll &&
+            child != centralFreq_edit && child != centralFreq_label &&
+            child != supFreq_edit && child != supFreq_label &&
+            child != infFreq_edit && child != infFreq_label &&
+            child != gainValue_edit && child != gainValue_label) {
+            child->deleteLater();  // Remove dinamicamente
+        }
+    }
+
+    // Esconde todos os campos
+    hide_all_edit();
+
+    // Restaura os botões e comboBox
+    botaoPassivo->show();
+    botaoAtivo->show();
+    filtersType_combo->show();
+    botaoConfirmAll->hide();
+
+    // Limpa os campos
+    centralFreq_edit->clear();
+    supFreq_edit->clear();
+    infFreq_edit->clear();
+    gainValue_edit->clear();
+    filtersType_combo->setCurrentIndex(-1);
+}

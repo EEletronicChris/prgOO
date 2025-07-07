@@ -23,6 +23,9 @@ private:
     float central_frequency;
     float gain_value;
     QLabel *imageLabel;
+    QLabel *resistor_i_label;
+
+    QString floatToText;
 };
 
 #endif
