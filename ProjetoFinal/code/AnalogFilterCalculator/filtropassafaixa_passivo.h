@@ -30,5 +30,7 @@ private:
 
     QString floatToText;
 
+    QPushButton *botaoReiniciar;
+
 };
 #endif

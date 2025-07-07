@@ -11,6 +11,8 @@
 #include <QMessageBox>
 #include <QPixmap>
 
+#define PI 3.14159265358979
+
 
 class Filtros : public QWidget {
     Q_OBJECT

@@ -1,7 +1,7 @@
 #ifndef GRAFICOFILTROPASSIVO_H
 #define GRAFICOFILTROPASSIVO_H
 
-#include "FiltroPassivo.h"
+#include "filtropassivo.h"
 //#include <QtCharts>
 
 class GraficoFiltroPassivo : public FiltroPassivo {

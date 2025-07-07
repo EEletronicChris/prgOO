@@ -9,6 +9,12 @@ FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, float fInf, 
 
     qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency;
 
+    botaoReiniciar = new QPushButton("Reiniciar", this);
+    botaoReiniciar->resize(100, 30);
+    botaoReiniciar->move(974, 10);
+    botaoReiniciar->show();
+    connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(954, 440);

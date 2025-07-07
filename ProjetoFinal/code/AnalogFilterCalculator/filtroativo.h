@@ -21,6 +21,8 @@ private:
     float central_frequency;
     float gain_value;
     QString filter_type;
+
+
 };
 
 #endif

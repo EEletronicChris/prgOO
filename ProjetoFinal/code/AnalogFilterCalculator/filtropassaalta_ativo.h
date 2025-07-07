@@ -26,6 +26,9 @@ private:
     QLabel *resistor_i_label;
 
     QString floatToText;
+
+    QPushButton *botaoReiniciar;
+
 };
 
 #endif

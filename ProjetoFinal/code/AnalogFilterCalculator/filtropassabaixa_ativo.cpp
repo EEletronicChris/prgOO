@@ -8,6 +8,12 @@ FiltroPassaBaixa_ativo::FiltroPassaBaixa_ativo(QWidget *parent, float ganho, flo
 
     qDebug() << " central: " << central_frequency << "ganho: " << gain_value;
 
+    botaoReiniciar = new QPushButton("Reiniciar", this);
+    botaoReiniciar->resize(100, 30);
+    botaoReiniciar->move(924, 10);
+    botaoReiniciar->show();
+    connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(904, 580);

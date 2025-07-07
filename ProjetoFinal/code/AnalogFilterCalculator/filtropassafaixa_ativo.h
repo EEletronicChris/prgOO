@@ -30,6 +30,8 @@ private:
     QLabel *resistor_R_label;
 
     QString floatToText;
+
+    QPushButton *botaoReiniciar;
 };
 
 #endif

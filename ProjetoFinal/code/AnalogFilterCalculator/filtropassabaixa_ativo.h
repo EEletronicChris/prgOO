@@ -13,7 +13,7 @@ public:
 
     void draw_low_pass_active();
 
-   void components_calc();
+    void components_calc();
 
 private:
     float resistor_i_value;
@@ -26,6 +26,8 @@ private:
     QLabel *resistor_i_label;
 
     QString floatToText;
+
+    QPushButton *botaoReiniciar;
 
 };
 

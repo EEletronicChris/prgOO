@@ -7,7 +7,14 @@ FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent, float ganho, float
     this->central_frequency = fCent;
 
     qDebug() << " central: " << central_frequency << "ganho: " << gain_value;
+    // Botão reiniciar
+    botaoReiniciar = new QPushButton("Reiniciar", this);
+    botaoReiniciar->resize(100, 30);
+    botaoReiniciar->move(1120, 10);
+    botaoReiniciar->show();
+    connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
 
+    // Ajustes imagem
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(1100, 374);
@@ -30,6 +37,8 @@ void FiltroPassaAlta_ativo::draw_high_pass_active()
     resistor_i_label->show();
 }
 
-void FiltroPassaAlta_ativo::components_calc() {
+void FiltroPassaAlta_ativo::components_calc()
+{
     draw_high_pass_active();
 }
+

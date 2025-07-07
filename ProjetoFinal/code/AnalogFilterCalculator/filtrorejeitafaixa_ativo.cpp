@@ -9,6 +9,12 @@ FiltroRejeitaFaixa_ativo::FiltroRejeitaFaixa_ativo(QWidget *parent, float ganho,
 
     qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency <<  "ganho: " << gain_value;
 
+    botaoReiniciar = new QPushButton("Reiniciar", this);
+    botaoReiniciar->resize(100, 30);
+    botaoReiniciar->move(910, 10);
+    botaoReiniciar->show();
+    connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(890, 512);

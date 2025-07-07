@@ -223,9 +223,7 @@ void Filtros::resetarInterface()
             child != centralFreq_edit && child != centralFreq_label &&
             child != supFreq_edit && child != supFreq_label &&
             child != infFreq_edit && child != infFreq_label &&
-            child != gainValue_edit && child != gainValue_label) {
-            child->deleteLater();  // Remove dinamicamente
-        }
+            child != gainValue_edit && child != gainValue_label) { child->deleteLater(); }
     }
 
     // Esconde todos os campos
@@ -243,4 +241,12 @@ void Filtros::resetarInterface()
     infFreq_edit->clear();
     gainValue_edit->clear();
     filtersType_combo->setCurrentIndex(-1);
+
+    this->resize(1300, 650);
+    this->update();
+
+    lower_cut_frequency = 0;
+    upper_cut_frequency = 0;
+    central_frequency = 0;
+    gain_value = 0;
 }

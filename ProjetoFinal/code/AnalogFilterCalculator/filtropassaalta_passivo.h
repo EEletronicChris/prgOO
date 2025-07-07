@@ -18,17 +18,20 @@ public:
     void components_calc();
 
 private:
-    float resistor_value;
-    float capacitor_value;
+    double resistor_value;
+    double capacitor_value;
     float inductor_value;
     bool inductor_presence;
 
-    float central_frequency;
+    double central_frequency;
 
     QLabel *imageLabel;
     QLabel *resistor_label;
+    QLabel *capacitor_label;
 
     QString floatToText;
+
+    QPushButton *botaoReiniciar;
 };
 
 #endif
