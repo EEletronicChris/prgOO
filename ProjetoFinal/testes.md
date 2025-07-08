@@ -16,8 +16,11 @@
 	<li>	Implementaçaão das caixas de preenchimento QLineEdits conforme filtro selecionado</li>
 	<div align="center">commit 73bef6c4b03ac248f7ed2e08d96b980d1cfdbd04</div>
 	<li>	Teste de entrada de valores nas caixas de preenchimento. [ OK ]</li>
-	<div align="center">commit ....</div>
+	<div align="center">commit ccd804654c9709af2dff63dc201a9d7140cf1c73</div>
 	<li>	Teste de impressão dos circuitos sem valores de componentes. [ OK ]</li>
+	<div align="center">commit b645f36e63017b0a58c681b64d28f6174d48d43a</div>
+	<li>	Teste das primeiras impressoes de valores dos componentes. [ OK ]</li>
+
 </ol>
 
 <div align="center">
