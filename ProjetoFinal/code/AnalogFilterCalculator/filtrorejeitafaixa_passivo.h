@@ -33,6 +33,10 @@ private:
     QString doubleToText;
 
     QPushButton *botaoReiniciar;
+    QPushButton *botaoGrafico;
+
+private slots:
+    void prepare_graph();
 };
 
 #endif

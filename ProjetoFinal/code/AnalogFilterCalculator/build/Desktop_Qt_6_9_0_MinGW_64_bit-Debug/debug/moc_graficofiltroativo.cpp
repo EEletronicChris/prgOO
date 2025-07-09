@@ -8,6 +8,30 @@
 
 #include "../../../graficofiltroativo.h"
 #include <QtGui/qtextcursor.h>
+#include <QtGui/qscreen.h>
+#include <QtCharts/qlineseries.h>
+#include <QtCharts/qabstractbarseries.h>
+#include <QtCharts/qvbarmodelmapper.h>
+#include <QtCharts/qboxplotseries.h>
+#include <QtCharts/qcandlestickseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qboxplotseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qxyseries.h>
+#include <QtCharts/qxyseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qboxplotseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qpieseries.h>
+#include <QtCore/qabstractitemmodel.h>
+#include <QtCharts/qxyseries.h>
+#include <QtCore/qabstractitemmodel.h>
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -52,7 +76,7 @@ template <> constexpr inline auto GraficoFiltroAtivo::qt_create_metaobjectdata<q
             qt_methods, qt_properties, qt_enums);
 }
 Q_CONSTINIT const QMetaObject GraficoFiltroAtivo::staticMetaObject = { {
-    QMetaObject::SuperData::link<FiltroAtivo::staticMetaObject>(),
+    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN18GraficoFiltroAtivoE_t>.stringdata,
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN18GraficoFiltroAtivoE_t>.data,
     qt_static_metacall,
@@ -80,12 +104,12 @@ void *GraficoFiltroAtivo::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN18GraficoFiltroAtivoE_t>.strings))
         return static_cast<void*>(this);
-    return FiltroAtivo::qt_metacast(_clname);
+    return QMainWindow::qt_metacast(_clname);
 }
 
 int GraficoFiltroAtivo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = FiltroAtivo::qt_metacall(_c, _id, _a);
+    _id = QMainWindow::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

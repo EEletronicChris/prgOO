@@ -16,6 +16,13 @@ FiltroRejeitaFaixa_ativo::FiltroRejeitaFaixa_ativo(QWidget *parent, double ganho
     botaoReiniciar->show();
     connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
 
+    botaoGrafico = new QPushButton("Gerar gráfico", this);
+    botaoGrafico->setStyleSheet("background-color: #1C1C1C");
+    botaoGrafico->resize(100, 30);
+    botaoGrafico->move(910, 50);
+    botaoGrafico->show();
+    connect(botaoGrafico, &QPushButton::clicked,this,&FiltroRejeitaFaixa_ativo::prepare_graph);
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(890, 512);
@@ -104,3 +111,7 @@ void FiltroRejeitaFaixa_ativo::components_calc()
     draw_reject_band_active();
 }
 
+void FiltroRejeitaFaixa_ativo::prepare_graph()
+{
+
+}

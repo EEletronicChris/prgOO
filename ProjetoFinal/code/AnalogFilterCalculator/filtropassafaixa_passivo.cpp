@@ -1,4 +1,5 @@
 #include "filtropassafaixa_passivo.h"
+#include "graficofiltropassivo.h"
 
 FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent) : FiltroPassivo(parent) {}
 
@@ -15,6 +16,13 @@ FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, double fInf,
     botaoReiniciar->move(974, 10);
     botaoReiniciar->show();
     connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
+
+    botaoGrafico = new QPushButton("Gerar gráfico", this);
+    botaoGrafico->setStyleSheet("background-color: #1C1C1C");
+    botaoGrafico->resize(100, 30);
+    botaoGrafico->move(974, 50);
+    botaoGrafico->show();
+    connect(botaoGrafico, &QPushButton::clicked,this,&FiltroPassaFaixa_passivo::prepare_graph);
 
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
@@ -64,4 +72,11 @@ void FiltroPassaFaixa_passivo::components_calc()
     capacitor_label->setText(doubleToText + " F");   // Qlabel imprime double
 
     draw_pass_band_passive_S();
+}
+
+void FiltroPassaFaixa_passivo::prepare_graph()
+{
+    GraficoFiltroPassivo *grafico = new GraficoFiltroPassivo(this, resistor_value, capacitor_value, inductor_value);
+    grafico->draw_graph_passa_faixa();
+    grafico->show();
 }

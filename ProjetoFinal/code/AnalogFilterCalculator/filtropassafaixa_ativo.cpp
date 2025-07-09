@@ -16,6 +16,13 @@ FiltroPassaFaixa_ativo::FiltroPassaFaixa_ativo(QWidget *parent, double ganho, do
     botaoReiniciar->show();
     connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
 
+    botaoGrafico = new QPushButton("Gerar gráfico", this);
+    botaoGrafico->setStyleSheet("background-color: #1C1C1C");
+    botaoGrafico->resize(100, 30);
+    botaoGrafico->move(1140, 50);
+    botaoGrafico->show();
+    connect(botaoGrafico, &QPushButton::clicked,this,&FiltroPassaFaixa_ativo::prepare_graph);
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(1120, 337);
@@ -96,4 +103,9 @@ void FiltroPassaFaixa_ativo::components_calc()
     resistor_f_label->setText(doubleToText + " Ω");
 
     draw_pass_band_active();
+}
+
+void FiltroPassaFaixa_ativo::prepare_graph()
+{
+
 }

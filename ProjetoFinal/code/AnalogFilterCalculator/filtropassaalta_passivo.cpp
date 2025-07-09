@@ -15,6 +15,13 @@ FiltroPassaAlta_passivo::FiltroPassaAlta_passivo(QWidget *parent, double fCent) 
     botaoReiniciar->show();
     connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
 
+    botaoGrafico = new QPushButton("Gerar gráfico", this);
+    botaoGrafico->setStyleSheet("background-color: #1C1C1C");
+    botaoGrafico->resize(100, 30);
+    botaoGrafico->move(720, 50);
+    botaoGrafico->show();
+    connect(botaoGrafico, &QPushButton::clicked,this,&FiltroPassaAlta_passivo::prepare_graph);
+
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
     imageLabel->resize(700, 440);
@@ -35,11 +42,6 @@ void FiltroPassaAlta_passivo::draw_high_pass_passive_RC() {
     resistor_label->resize(80, 30);
     resistor_label->move(500, 200);
     resistor_label->show();
-
-    // Teste de gráfico
-    GraficoFiltroPassivo *grafico = new GraficoFiltroPassivo(this, resistor_value, capacitor_value);
-    grafico->draw_graph_passa_alta();
-    grafico->show();
 }
 
 void FiltroPassaAlta_passivo::draw_high_pass_passive_RL() {}
@@ -59,3 +61,9 @@ void FiltroPassaAlta_passivo::components_calc()
     draw_high_pass_passive_RC();
 }
 
+void FiltroPassaAlta_passivo::prepare_graph()
+{
+    GraficoFiltroPassivo *grafico = new GraficoFiltroPassivo(this, resistor_value, capacitor_value, 0.0);
+    grafico->draw_graph_passa_alta();
+    grafico->show();
+}

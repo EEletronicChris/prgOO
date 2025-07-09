@@ -15,8 +15,6 @@ class GraficoFiltroPassivo : public QMainWindow {
 public:
     explicit GraficoFiltroPassivo(QWidget *parent = nullptr);
 
-    GraficoFiltroPassivo(QWidget *parent, double R, double C);
-
     GraficoFiltroPassivo(QWidget *parent, double R, double C, double L);
 
     void draw_graph_passa_alta();
@@ -31,6 +29,8 @@ private:
     QChartView *chartView;
     QChart *chart;
     QLineSeries *serieMagnitude;
+    QLogValueAxis *eixoX;
+    QValueAxis *eixoY;
 
     double resistor_value;
     double capacitor_value;
@@ -39,4 +39,4 @@ private:
 
 };
 
-#endif // GRAFICOFILTROPASSIVO_H
+#endif

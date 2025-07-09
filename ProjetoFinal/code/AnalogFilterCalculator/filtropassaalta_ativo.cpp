@@ -15,6 +15,13 @@ FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent, double ganho, doub
     botaoReiniciar->show();
     connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
 
+    botaoGrafico = new QPushButton("Gerar gráfico", this);
+    botaoGrafico->setStyleSheet("background-color: #1C1C1C");
+    botaoGrafico->resize(100, 30);
+    botaoGrafico->move(1120, 50);
+    botaoGrafico->show();
+    connect(botaoGrafico, &QPushButton::clicked,this,&FiltroPassaAlta_ativo::prepare_graph);
+
     // Ajustes imagem
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
@@ -63,3 +70,11 @@ void FiltroPassaAlta_ativo::components_calc()
     draw_high_pass_active();
 }
 
+void FiltroPassaAlta_ativo::prepare_graph()
+{
+    GraficoFiltroAtivo *grafico = new GraficoFiltroAtivo(this, 0.0,resistor_i_value,
+                                                         resistor_f_value, capacitor_value, 0.0,
+                                                         0.0);
+    grafico->draw_graph_passa_alta();
+    grafico->show();
+}

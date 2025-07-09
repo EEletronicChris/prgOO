@@ -63,10 +63,14 @@ template <> constexpr inline auto FiltroPassaAlta_passivo::qt_create_metaobjectd
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "FiltroPassaAlta_passivo"
+        "FiltroPassaAlta_passivo",
+        "prepare_graph",
+        ""
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Slot 'prepare_graph'
+        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -88,9 +92,12 @@ Q_CONSTINIT const QMetaObject FiltroPassaAlta_passivo::staticMetaObject = { {
 void FiltroPassaAlta_passivo::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     auto *_t = static_cast<FiltroPassaAlta_passivo *>(_o);
-    (void)_t;
-    (void)_c;
-    (void)_id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->prepare_graph(); break;
+        default: ;
+        }
+    }
     (void)_a;
 }
 
@@ -110,6 +117,18 @@ void *FiltroPassaAlta_passivo::qt_metacast(const char *_clname)
 int FiltroPassaAlta_passivo::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = FiltroPassivo::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 1;
+    }
     return _id;
 }
 QT_WARNING_POP

@@ -1,4 +1,5 @@
 #include "filtrorejeitafaixa_passivo.h"
+#include "graficofiltropassivo.h"
 
 FiltroRejeitaFaixa_passivo::FiltroRejeitaFaixa_passivo(QWidget *parent) : FiltroPassivo(parent) {}
 
@@ -15,6 +16,13 @@ FiltroRejeitaFaixa_passivo::FiltroRejeitaFaixa_passivo(QWidget *parent, double f
     botaoReiniciar->move(724, 10);
     botaoReiniciar->show();
     connect(botaoReiniciar, &QPushButton::clicked,this,&Filtros::resetarInterface);
+
+    botaoGrafico = new QPushButton("Gerar gráfico", this);
+    botaoGrafico->setStyleSheet("background-color: #1C1C1C");
+    botaoGrafico->resize(100, 30);
+    botaoGrafico->move(724, 50);
+    botaoGrafico->show();
+    connect(botaoGrafico, &QPushButton::clicked,this,&FiltroRejeitaFaixa_passivo::prepare_graph);
 
     imageLabel = new QLabel(this);
     imageLabel->setScaledContents(true);
@@ -65,4 +73,11 @@ void FiltroRejeitaFaixa_passivo::components_calc()
     capacitor_label->setText(doubleToText + " F");   // Qlabel imprime double
 
     draw_reject_band_passive_S();
+}
+
+void FiltroRejeitaFaixa_passivo::prepare_graph()
+{
+    GraficoFiltroPassivo *grafico = new GraficoFiltroPassivo(this, resistor_value, capacitor_value, inductor_value);
+    grafico->draw_graph_rejeita_faixa();
+    grafico->show();
 }

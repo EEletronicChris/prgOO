@@ -2,6 +2,7 @@
 #define FILTROPASSAALTA_ATIVO_H
 
 #include "filtroativo.h"
+#include "graficofiltroativo.h"
 
 class FiltroPassaAlta_ativo : public FiltroAtivo {
     Q_OBJECT
@@ -30,6 +31,10 @@ private:
     QString doubleToText;
 
     QPushButton *botaoReiniciar;
+    QPushButton *botaoGrafico;
+
+private slots:
+    void prepare_graph();
 
 };
 
