@@ -3,8 +3,8 @@
 
 FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent) : FiltroPassivo(parent) {}
 
-FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, double fInf, double fSup) : FiltroPassivo(parent) {
-
+FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, double fInf, double fSup) : FiltroPassivo(parent)
+{
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;
 
@@ -33,7 +33,8 @@ FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, double fInf,
     imageLabel->setPixmap(imagem);
 }
 
-void FiltroPassaFaixa_passivo::draw_pass_band_passive_S() {
+void FiltroPassaFaixa_passivo::draw_pass_band_passive_S()
+{
     imageLabel->show();
 
     inductor_label->resize(80, 30);

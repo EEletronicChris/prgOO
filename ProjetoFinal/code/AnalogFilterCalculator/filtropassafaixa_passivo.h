@@ -37,6 +37,5 @@ private:
 
 private slots:
     void prepare_graph();
-
 };
 #endif

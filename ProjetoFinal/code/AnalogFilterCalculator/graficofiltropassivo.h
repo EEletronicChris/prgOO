@@ -35,8 +35,6 @@ private:
     double resistor_value;
     double capacitor_value;
     double inductor_value;
-
-
 };
 
 #endif

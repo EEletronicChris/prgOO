@@ -2,7 +2,8 @@
 
 FiltroRejeitaFaixa_ativo::FiltroRejeitaFaixa_ativo(QWidget *parent) : FiltroAtivo(parent) {}
 
-FiltroRejeitaFaixa_ativo::FiltroRejeitaFaixa_ativo(QWidget *parent, double ganho, double fInf, double fSup) : FiltroAtivo(parent) {
+FiltroRejeitaFaixa_ativo::FiltroRejeitaFaixa_ativo(QWidget *parent, double ganho, double fInf, double fSup) : FiltroAtivo(parent)
+{
     this->gain_value = ganho;
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;

@@ -40,9 +40,6 @@ private:
     double capacitor_value;
     double capacitor_1_value;
     double capacitor_2_value;
-
-
-
 };
 
 #endif

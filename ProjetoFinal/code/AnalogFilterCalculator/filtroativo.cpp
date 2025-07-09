@@ -26,7 +26,6 @@ void FiltroAtivo::filtro_plot_prepare_ativo()
     qDebug() << "tipo:  " << filter_type;
     get_gain_value();
 
-
     if (filter_type == "Filtro Ativo Passa-baixa"){
         FiltroPassaBaixa_ativo *filt = new FiltroPassaBaixa_ativo(this, gain_value, central_frequency);
         filt->show();

@@ -2,8 +2,8 @@
 
 FiltroPassaAlta_passivo::FiltroPassaAlta_passivo(QWidget *parent) : FiltroPassivo(parent) {}
 
-FiltroPassaAlta_passivo::FiltroPassaAlta_passivo(QWidget *parent, double fCent) : FiltroPassivo(parent) {
-
+FiltroPassaAlta_passivo::FiltroPassaAlta_passivo(QWidget *parent, double fCent) : FiltroPassivo(parent)
+{
     this->central_frequency = fCent;
 
     qDebug() <<" central: " << central_frequency;

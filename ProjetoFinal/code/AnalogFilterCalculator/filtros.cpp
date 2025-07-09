@@ -3,11 +3,7 @@
 #include "filtropassivo.h"
 
 
-Filtros::Filtros(QWidget *parent) :
-    QWidget(parent), botaoPassivo(nullptr), botaoAtivo(nullptr), filtersType_combo(nullptr),
-    centralFreq_edit(nullptr), centralFreq_label(nullptr), supFreq_edit(nullptr),
-    supFreq_label(nullptr), infFreq_edit(nullptr), infFreq_label(nullptr), gainValue_edit(nullptr),
-    gainValue_label(nullptr)    //Avaliar retirar variaveis-membro
+Filtros::Filtros(QWidget *parent):QWidget(parent)
 {
     this->setFixedSize(1300,650);
     // Criação dos Widgets
@@ -95,7 +91,6 @@ void Filtros::get_lower_cut_frequency()
     lower_cut_frequency = infFreq_edit->text().toDouble();
 
     qDebug() << "Frequência inferior: " << lower_cut_frequency;
-
 }
 
 void Filtros::get_upper_cut_frequency()
@@ -215,7 +210,6 @@ void Filtros::show_one_freq_edit()
     } else {
         botaoConfirmAll->move(326, 90);
     }
-
 }
 
 void Filtros::resetarInterface()

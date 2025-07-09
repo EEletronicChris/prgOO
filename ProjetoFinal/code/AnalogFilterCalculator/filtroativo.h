@@ -20,9 +20,8 @@ private:
     double upper_cut_frequency;
     double central_frequency;
     double gain_value;
+
     QString filter_type;
-
-
 };
 
 #endif

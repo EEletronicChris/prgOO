@@ -22,6 +22,7 @@ private:
     double resistor_value;
     double capacitor_value;
     double inductor_value;
+
     bool inductor_presence;
 
     double central_frequency;

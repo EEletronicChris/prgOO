@@ -22,6 +22,7 @@ private:
 
     double central_frequency;
     double gain_value;
+
     QLabel *imageLabel;
     QLabel *resistor_i_label;
     QLabel *resistor_f_label;

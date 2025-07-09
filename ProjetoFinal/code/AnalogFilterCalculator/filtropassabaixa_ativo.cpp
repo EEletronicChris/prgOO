@@ -30,11 +30,10 @@ FiltroPassaBaixa_ativo::FiltroPassaBaixa_ativo(QWidget *parent, double ganho, do
 
     QPixmap imagem("images/FiltroPassaBaixa_ativo.png");
     imageLabel->setPixmap(imagem);
-
-
 }
 
-void FiltroPassaBaixa_ativo::draw_low_pass_active() {
+void FiltroPassaBaixa_ativo::draw_low_pass_active()
+{
     imageLabel->show();
 
     resistor_i_label->resize(60, 30);
@@ -48,7 +47,6 @@ void FiltroPassaBaixa_ativo::draw_low_pass_active() {
     capacitor_label->resize(80, 30);
     capacitor_label->move(535, 180);
     capacitor_label->show();
-
 }
 
 void FiltroPassaBaixa_ativo::components_calc()

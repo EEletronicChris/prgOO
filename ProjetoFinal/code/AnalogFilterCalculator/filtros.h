@@ -39,8 +39,11 @@ private:
 
 private slots:
     void carregarFiltrosPassivos();
+
     void carregarFiltrosAtivos();
+
     void get_filter_type();
+
     void confirmarFiltroSelecionado();
 
 protected:
@@ -48,13 +51,15 @@ protected:
     QPushButton *botaoPassivo;
     QPushButton *botaoAtivo;
     QPushButton *botaoConfirmAll;
+
     // Seleção de filtros
     QComboBox *filtersType_combo;
-private:
+
     // Campos de preenchimento
     QLineEdit *centralFreq_edit;
     QLineEdit *supFreq_edit;
     QLineEdit *infFreq_edit;
+
     // Campos de texto
     QLabel *centralFreq_label;
     QLabel *supFreq_label;
