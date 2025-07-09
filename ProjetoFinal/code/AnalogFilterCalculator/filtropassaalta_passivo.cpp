@@ -9,6 +9,7 @@ FiltroPassaAlta_passivo::FiltroPassaAlta_passivo(QWidget *parent, float fCent) :
     qDebug() <<" central: " << central_frequency;
 
     botaoReiniciar = new QPushButton("Reiniciar", this);
+    botaoReiniciar->setStyleSheet("background-color: #1C1C1C");
     botaoReiniciar->resize(100, 30);
     botaoReiniciar->move(720, 10);
     botaoReiniciar->show();

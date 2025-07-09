@@ -9,6 +9,7 @@ Filtros::Filtros(QWidget *parent) :
     supFreq_label(nullptr), infFreq_edit(nullptr), infFreq_label(nullptr), gainValue_edit(nullptr),
     gainValue_label(nullptr)    //Avaliar retirar variaveis-membro
 {
+    this->setFixedSize(1300,650);
     // Criação dos Widgets
     // Botões
     botaoPassivo        = new QPushButton("Calcular um Filtro Passivo", this);
@@ -241,9 +242,6 @@ void Filtros::resetarInterface()
     infFreq_edit->clear();
     gainValue_edit->clear();
     filtersType_combo->setCurrentIndex(-1);
-
-    this->resize(1300, 650);
-    this->update();
 
     lower_cut_frequency = 0;
     upper_cut_frequency = 0;

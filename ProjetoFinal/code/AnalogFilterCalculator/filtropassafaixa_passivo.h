@@ -18,15 +18,17 @@ public:
     void components_calc();
 
 private:
-    float resistor_value;
-    float capacitor_value;
-    float inductor_value;
+    double resistor_value;
+    double capacitor_value;
+    double inductor_value;
 
-    float lower_cut_frequency;
-    float upper_cut_frequency;
+    double lower_cut_frequency;
+    double upper_cut_frequency;
 
     QLabel *imageLabel;
     QLabel *resistor_label;
+    QLabel *capacitor_label;
+    QLabel *inductor_label;
 
     QString floatToText;
 

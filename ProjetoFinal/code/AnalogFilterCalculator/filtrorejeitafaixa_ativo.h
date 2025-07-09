@@ -27,7 +27,16 @@ private:
     float gain_value;
 
     QLabel *imageLabel;
-    QLabel *resistor_i_label;
+    QLabel *resistor_R_label;
+    QLabel *resistor_i1_label;
+    QLabel *resistor_i2_label;
+    QLabel *resistor_f_label;
+    QLabel *capacitor_1_label;
+    QLabel *capacitor_2_label;
+    QLabel *resistor_R1_label;
+    QLabel *resistor_R2_label;
+    QLabel *resistor_R3_label;
+    QLabel *resistor_R4_label;
 
     QString floatToText;
 
