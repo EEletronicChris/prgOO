@@ -28,6 +28,13 @@ void FiltroPassaBaixa_passivo::draw_low_pass_passive_RC()
 {
     imageLabel->show();
 
+    capacitor_label->resize(60, 30);
+    capacitor_label->move(535, 185);
+    capacitor_label->show();
+
+    resistor_label->resize(80, 30);
+    resistor_label->move(250, 5);
+    resistor_label->show();
 }
 
 void FiltroPassaBaixa_passivo::draw_low_pass_passive_RL() {}
@@ -39,20 +46,11 @@ void FiltroPassaBaixa_passivo::components_calc()
     capacitor_label = new QLabel(this);
     floatToText = QString::number(capacitor_value, 'g', 15);
     capacitor_label->setText(floatToText + " F");   // Qlabel imprime float
-    capacitor_label->resize(60, 30);
-    capacitor_label->move(535, 185);
-    capacitor_label->show();
-
 
     resistor_value = 1/(capacitor_value * central_frequency * 2 * PI);
     resistor_label = new QLabel(this);
     floatToText = QString::number(resistor_value, 'g', 2);
     resistor_label->setText(floatToText + " Ω");   // Qlabel imprime float
-    resistor_label->resize(80, 30);
-    resistor_label->move(250, 5);
-    resistor_label->show();
 
     draw_low_pass_passive_RC();
-
-
 }

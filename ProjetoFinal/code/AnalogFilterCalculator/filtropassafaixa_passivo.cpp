@@ -27,13 +27,24 @@ FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, float fInf, 
 
 void FiltroPassaFaixa_passivo::draw_pass_band_passive_S() {
     imageLabel->show();
+
+    inductor_label->resize(80, 30);
+    inductor_label->move(260, 15);
+    inductor_label->show();
+
+    resistor_label->resize(60, 30);
+    resistor_label->move(650, 220);
+    resistor_label->show();
+
+    capacitor_label->resize(80, 30);
+    capacitor_label->move(500, 120);
+    capacitor_label->show();
 }
 
 void FiltroPassaFaixa_passivo::draw_pass_band_passive_P() {}
 
-void FiltroPassaFaixa_passivo::components_calc() {
-    draw_pass_band_passive_S();
-
+void FiltroPassaFaixa_passivo::components_calc()
+{
     double B = (upper_cut_frequency - lower_cut_frequency)* 2 * PI;
     double Wo = (B/2) + lower_cut_frequency;
 
@@ -41,23 +52,16 @@ void FiltroPassaFaixa_passivo::components_calc() {
     inductor_label = new QLabel(this);
     floatToText = QString::number(inductor_value, 'g', 15);
     inductor_label->setText(floatToText + " H");   // Qlabel imprime float
-    inductor_label->resize(80, 30);
-    inductor_label->move(260, 15);
-    inductor_label->show();
 
     resistor_value = inductor_value * B;
     resistor_label = new QLabel(this);
     floatToText = QString::number(resistor_value, 'g', 2);
     resistor_label->setText(floatToText + " Ω");   // Qlabel imprime float
-    resistor_label->resize(60, 30);
-    resistor_label->move(650, 220);
-    resistor_label->show();
 
     capacitor_value = 1/(Wo * Wo * inductor_value);
     capacitor_label = new QLabel(this);
     floatToText = QString::number(capacitor_value, 'g', 2);
     capacitor_label->setText(floatToText + " F");   // Qlabel imprime float
-    capacitor_label->resize(80, 30);
-    capacitor_label->move(500, 120);
-    capacitor_label->show();
+
+    draw_pass_band_passive_S();
 }

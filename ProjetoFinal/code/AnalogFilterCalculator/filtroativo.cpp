@@ -16,10 +16,9 @@ FiltroAtivo::FiltroAtivo(QWidget *parent, float ganho, float fInf, float fCent, 
     qDebug() << " fInf: " << lower_cut_frequency << " fSup:" << upper_cut_frequency << " central: " << central_frequency << "ganho: " << gain_value;
 }
 
-void FiltroAtivo::get_gain_value() {
-    if (gain_value == 0){
-        QMessageBox::about(this, "", "Valor de ganho considerado de 0 dB");
-    }
+void FiltroAtivo::get_gain_value()
+{
+    // Conversão para ganho em dB
 }
 
 void FiltroAtivo::filtro_plot_prepare_ativo()

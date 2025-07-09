@@ -152,8 +152,12 @@ void Filtros::confirmarFiltroSelecionado()
 
     // Verifica se Input é float
     if (central_frequency == 0 && (upper_cut_frequency == 0 || lower_cut_frequency == 0)){
-        QMessageBox::about(this,"", "Insira um valor de frequência e/ou ganho válido");
-    } else{
+        QMessageBox::about(this,"", "Insira um valor de frequência e/ou ganho válido.");
+    } else if ((filter_type.contains("faixa")) && (upper_cut_frequency < lower_cut_frequency)){
+        QMessageBox::about(this,"", "A frequênia de corte superior deve ser maior que a frequência de corte inferior.");
+    } else if ((filter_type.contains("Ativo")) && (gain_value <= 0)){
+        QMessageBox::about(this,"", "O ganho deve ser maior que 0.");
+    } else {
         hide_all_edit();
         botaoConfirmAll->hide();
         botaoAtivo->hide();
