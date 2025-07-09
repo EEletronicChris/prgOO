@@ -6,7 +6,7 @@
 
 FiltroPassivo::FiltroPassivo(QWidget *parent) : Filtros(parent) {}
 
-FiltroPassivo::FiltroPassivo(QWidget *parent, float fInf, float fCent, float fSup, QString tipo) : Filtros(parent) {
+FiltroPassivo::FiltroPassivo(QWidget *parent, double fInf, double fCent, double fSup, QString tipo) : Filtros(parent) {
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;
     this->central_frequency = fCent;

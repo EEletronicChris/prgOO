@@ -9,7 +9,7 @@ class FiltroPassivo : public Filtros {
 public:
     explicit FiltroPassivo(QWidget *parent = nullptr);
 
-    FiltroPassivo(QWidget *parent, float fInf, float fCent, float fSup, QString tipo);
+    FiltroPassivo(QWidget *parent, double fInf, double fCent, double fSup, QString tipo);
 
     void get_component_preference();
 
@@ -21,10 +21,10 @@ private:
     bool component_preference;
     bool choose_S_P;
 
-    float lower_cut_frequency;
-    float upper_cut_frequency;
-    float central_frequency;
-    float gain_value;
+    double lower_cut_frequency;
+    double upper_cut_frequency;
+    double central_frequency;
+    double gain_value;
     QString filter_type;
 };
 

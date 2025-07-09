@@ -9,7 +9,7 @@ class FiltroRejeitaFaixa_passivo : public FiltroPassivo
 public:
     explicit FiltroRejeitaFaixa_passivo(QWidget *parent = nullptr);
 
-    FiltroRejeitaFaixa_passivo(QWidget *parent, float fInf, float fSup);
+    FiltroRejeitaFaixa_passivo(QWidget *parent, double fInf, double fSup);
 
     void draw_reject_band_passive_S();
 
@@ -30,7 +30,7 @@ private:
     QLabel *capacitor_label;
     QLabel *inductor_label;
 
-    QString floatToText;
+    QString doubleToText;
 
     QPushButton *botaoReiniciar;
 };

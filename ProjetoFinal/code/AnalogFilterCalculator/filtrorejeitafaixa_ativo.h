@@ -9,22 +9,22 @@ class FiltroRejeitaFaixa_ativo : public FiltroAtivo
 public:
     explicit FiltroRejeitaFaixa_ativo(QWidget *parent = nullptr);
 
-    FiltroRejeitaFaixa_ativo(QWidget *parent, float ganho, float fInf, float fSup);
+    FiltroRejeitaFaixa_ativo(QWidget *parent, double ganho, double fInf, double fSup);
 
     void draw_reject_band_active();
 
     void components_calc();
 
 private:
-    float resistor_R_value;
-    float resistor_i_value;
-    float resistor_f_value;
-    float capacitor_1_value;
-    float capacitor_2_value;
+    double resistor_R_value;
+    double resistor_i_value;
+    double resistor_f_value;
+    double capacitor_1_value;
+    double capacitor_2_value;
 
-    float lower_cut_frequency;
-    float upper_cut_frequency;
-    float gain_value;
+    double lower_cut_frequency;
+    double upper_cut_frequency;
+    double gain_value;
 
     QLabel *imageLabel;
     QLabel *resistor_R_label;
@@ -38,7 +38,7 @@ private:
     QLabel *resistor_R3_label;
     QLabel *resistor_R4_label;
 
-    QString floatToText;
+    QString doubleToText;
 
     QPushButton *botaoReiniciar;
 };

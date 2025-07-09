@@ -9,25 +9,25 @@ class FiltroPassaAlta_ativo : public FiltroAtivo {
 public:
     explicit FiltroPassaAlta_ativo(QWidget *parent = nullptr);
 
-    FiltroPassaAlta_ativo(QWidget *parent, float ganho, float fCent);
+    FiltroPassaAlta_ativo(QWidget *parent, double ganho, double fCent);
 
     void draw_high_pass_active();
 
     void components_calc();
 
 private:
-    float resistor_i_value;
-    float resistor_f_value;
-    float capacitor_value;
+    double resistor_i_value;
+    double resistor_f_value;
+    double capacitor_value;
 
-    float central_frequency;
-    float gain_value;
+    double central_frequency;
+    double gain_value;
     QLabel *imageLabel;
     QLabel *resistor_i_label;
     QLabel *resistor_f_label;
     QLabel *capacitor_label;
 
-    QString floatToText;
+    QString doubleToText;
 
     QPushButton *botaoReiniciar;
 

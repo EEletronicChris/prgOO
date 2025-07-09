@@ -2,6 +2,7 @@
 #define FILTROPASSABAIXA_PASSIVO_H
 
 #include "filtropassivo.h"
+#include "graficofiltropassivo.h"
 
 class FiltroPassaBaixa_passivo : public FiltroPassivo {
     Q_OBJECT
@@ -9,7 +10,7 @@ class FiltroPassaBaixa_passivo : public FiltroPassivo {
 public:
     explicit FiltroPassaBaixa_passivo(QWidget *parent = nullptr);
 
-    FiltroPassaBaixa_passivo(QWidget *parent,float fCent);
+    FiltroPassaBaixa_passivo(QWidget *parent,double fCent);
 
     void draw_low_pass_passive_RC();
 
@@ -29,7 +30,7 @@ private:
     QLabel *resistor_label;
     QLabel *capacitor_label;
 
-    QString floatToText;
+    QString doubleToText;
 
     QPushButton *botaoReiniciar;
 

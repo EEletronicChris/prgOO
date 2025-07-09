@@ -2,6 +2,8 @@
 #define GRAFICOFILTROATIVO_H
 
 #include "filtroativo.h"
+
+
 //#include <QtCharts> //avaliar o uso
 
     class GraficoFiltroAtivo : public FiltroAtivo {
@@ -11,6 +13,8 @@ public:
     explicit GraficoFiltroAtivo(QWidget *parent = nullptr);
 
     void draw_graph();
+
+private:
 
 
 };

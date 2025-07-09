@@ -32,10 +32,10 @@ public:
 private:
     QString filter_type;
     QLineEdit *gainValue_edit;
-    float lower_cut_frequency;
-    float upper_cut_frequency;
-    float central_frequency;
-    float gain_value;
+    double lower_cut_frequency;
+    double upper_cut_frequency;
+    double central_frequency;
+    double gain_value;
 
 private slots:
     void carregarFiltrosPassivos();

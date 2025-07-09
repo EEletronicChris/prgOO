@@ -2,7 +2,7 @@
 
 FiltroPassaFaixa_ativo::FiltroPassaFaixa_ativo(QWidget *parent) : FiltroAtivo(parent) {}
 
-FiltroPassaFaixa_ativo::FiltroPassaFaixa_ativo(QWidget *parent, float ganho, float fInf, float fSup) : FiltroAtivo(parent) {
+FiltroPassaFaixa_ativo::FiltroPassaFaixa_ativo(QWidget *parent, double ganho, double fInf, double fSup) : FiltroAtivo(parent) {
     this->gain_value = ganho;
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;
@@ -69,31 +69,31 @@ void FiltroPassaFaixa_ativo::components_calc()
     resistor_R2_label = new QLabel(this);
     resistor_R3_label = new QLabel(this);
     resistor_R4_label = new QLabel(this);
-    floatToText = QString::number(resistor_R_value, 'g', 2);
-    resistor_R1_label->setText(floatToText + " Ω");
-    resistor_R2_label->setText(floatToText + " Ω");
-    resistor_R3_label->setText(floatToText + " Ω");
-    resistor_R4_label->setText(floatToText + " Ω");
+    doubleToText = QString::number(resistor_R_value, 'g', 2);
+    resistor_R1_label->setText(doubleToText + " Ω");
+    resistor_R2_label->setText(doubleToText + " Ω");
+    resistor_R3_label->setText(doubleToText + " Ω");
+    resistor_R4_label->setText(doubleToText + " Ω");
 
     capacitor_1_value = 1/(resistor_R_value * upper_cut_frequency * 2 * PI);
     capacitor_1_label = new QLabel(this);
-    floatToText = QString::number(capacitor_1_value, 'g', 2);
-    capacitor_1_label->setText(floatToText + " F");   // Qlabel imprime float
+    doubleToText = QString::number(capacitor_1_value, 'g', 2);
+    capacitor_1_label->setText(doubleToText + " F");   // Qlabel imprime double
 
     capacitor_2_value = 1/(resistor_R_value * lower_cut_frequency * 2 * PI);
     capacitor_2_label = new QLabel(this);
-    floatToText = QString::number(capacitor_2_value, 'g', 2);
-    capacitor_2_label->setText(floatToText + " F");   // Qlabel imprime float
+    doubleToText = QString::number(capacitor_2_value, 'g', 2);
+    capacitor_2_label->setText(doubleToText + " F");   // Qlabel imprime double
 
     resistor_i_value = 20000;                        //20k ohms provisório
     resistor_i_label = new QLabel(this);
-    floatToText = QString::number(resistor_i_value, 'g', 2);
-    resistor_i_label->setText(floatToText + " Ω");
+    doubleToText = QString::number(resistor_i_value, 'g', 2);
+    resistor_i_label->setText(doubleToText + " Ω");
 
     resistor_f_value = (gain_value * resistor_i_value * (upper_cut_frequency + lower_cut_frequency))/upper_cut_frequency ;
     resistor_f_label = new QLabel(this);
-    floatToText = QString::number(resistor_f_value, 'g', 2);
-    resistor_f_label->setText(floatToText + " Ω");
+    doubleToText = QString::number(resistor_f_value, 'g', 2);
+    resistor_f_label->setText(doubleToText + " Ω");
 
     draw_pass_band_active();
 }

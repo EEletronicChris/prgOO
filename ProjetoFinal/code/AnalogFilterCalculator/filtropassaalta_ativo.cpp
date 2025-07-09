@@ -2,7 +2,7 @@
 
 FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent) : FiltroAtivo(parent) {}
 
-FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent, float ganho, float fCent) : FiltroAtivo(parent) {
+FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent, double ganho, double fCent) : FiltroAtivo(parent) {
     this->gain_value = ganho;
     this->central_frequency = fCent;
 
@@ -47,18 +47,18 @@ void FiltroPassaAlta_ativo::components_calc()
 {
     resistor_i_value = 1000;                        //1000 ohms provisório
     resistor_i_label = new QLabel(this);
-    floatToText = QString::number(resistor_i_value, 'g', 2);
-    resistor_i_label->setText(floatToText + " Ω");    // Qlabel imprime float
+    doubleToText = QString::number(resistor_i_value, 'g', 2);
+    resistor_i_label->setText(doubleToText + " Ω");    // Qlabel imprime double
 
     resistor_f_value = gain_value * resistor_i_value;
     resistor_f_label = new QLabel(this);
-    floatToText = QString::number(resistor_f_value, 'g', 2);
-    resistor_f_label->setText(floatToText + " Ω");
+    doubleToText = QString::number(resistor_f_value, 'g', 2);
+    resistor_f_label->setText(doubleToText + " Ω");
 
     capacitor_value = 1/(2* PI * resistor_i_value * central_frequency );
     capacitor_label = new QLabel(this);
-    floatToText = QString::number(capacitor_value, 'g', 2);
-    capacitor_label->setText(floatToText + " F");
+    doubleToText = QString::number(capacitor_value, 'g', 2);
+    capacitor_label->setText(doubleToText + " F");
 
     draw_high_pass_active();
 }

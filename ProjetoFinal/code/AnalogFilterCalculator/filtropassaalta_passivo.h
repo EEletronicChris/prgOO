@@ -2,6 +2,7 @@
 #define FILTROPASSAALTA_PASSIVO_H
 
 #include "filtropassivo.h"
+#include "graficofiltropassivo.h"
 
 class FiltroPassaAlta_passivo : public FiltroPassivo {
     Q_OBJECT
@@ -9,7 +10,7 @@ class FiltroPassaAlta_passivo : public FiltroPassivo {
 public:
     explicit FiltroPassaAlta_passivo(QWidget *parent = nullptr);
 
-    FiltroPassaAlta_passivo(QWidget *parent, float fCent);
+    FiltroPassaAlta_passivo(QWidget *parent, double fCent);
 
     void draw_high_pass_passive_RC();
 
@@ -20,7 +21,7 @@ public:
 private:
     double resistor_value;
     double capacitor_value;
-    float inductor_value;
+    double inductor_value;
     bool inductor_presence;
 
     double central_frequency;
@@ -29,7 +30,7 @@ private:
     QLabel *resistor_label;
     QLabel *capacitor_label;
 
-    QString floatToText;
+    QString doubleToText;
 
     QPushButton *botaoReiniciar;
 };

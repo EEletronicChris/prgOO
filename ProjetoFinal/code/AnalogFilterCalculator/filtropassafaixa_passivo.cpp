@@ -2,7 +2,7 @@
 
 FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent) : FiltroPassivo(parent) {}
 
-FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, float fInf, float fSup) : FiltroPassivo(parent) {
+FiltroPassaFaixa_passivo::FiltroPassaFaixa_passivo(QWidget *parent, double fInf, double fSup) : FiltroPassivo(parent) {
 
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;
@@ -50,18 +50,18 @@ void FiltroPassaFaixa_passivo::components_calc()
 
     inductor_value = 0.001;          // 1mH provisório
     inductor_label = new QLabel(this);
-    floatToText = QString::number(inductor_value, 'g', 15);
-    inductor_label->setText(floatToText + " H");   // Qlabel imprime float
+    doubleToText = QString::number(inductor_value, 'g', 15);
+    inductor_label->setText(doubleToText + " H");   // Qlabel imprime double
 
     resistor_value = inductor_value * B;
     resistor_label = new QLabel(this);
-    floatToText = QString::number(resistor_value, 'g', 2);
-    resistor_label->setText(floatToText + " Ω");   // Qlabel imprime float
+    doubleToText = QString::number(resistor_value, 'g', 2);
+    resistor_label->setText(doubleToText + " Ω");   // Qlabel imprime double
 
     capacitor_value = 1/(Wo * Wo * inductor_value);
     capacitor_label = new QLabel(this);
-    floatToText = QString::number(capacitor_value, 'g', 2);
-    capacitor_label->setText(floatToText + " F");   // Qlabel imprime float
+    doubleToText = QString::number(capacitor_value, 'g', 2);
+    capacitor_label->setText(doubleToText + " F");   // Qlabel imprime double
 
     draw_pass_band_passive_S();
 }

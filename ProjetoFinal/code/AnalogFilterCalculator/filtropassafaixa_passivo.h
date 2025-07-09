@@ -9,7 +9,7 @@ class FiltroPassaFaixa_passivo : public FiltroPassivo
 public:
     explicit FiltroPassaFaixa_passivo(QWidget *parent = nullptr);
 
-    FiltroPassaFaixa_passivo(QWidget *parent, float fInf, float fSup);
+    FiltroPassaFaixa_passivo(QWidget *parent, double fInf, double fSup);
 
     void draw_pass_band_passive_S();
 
@@ -30,7 +30,7 @@ private:
     QLabel *capacitor_label;
     QLabel *inductor_label;
 
-    QString floatToText;
+    QString doubleToText;
 
     QPushButton *botaoReiniciar;
 

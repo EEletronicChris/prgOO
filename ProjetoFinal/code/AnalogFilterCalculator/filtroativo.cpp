@@ -6,7 +6,7 @@
 
 FiltroAtivo::FiltroAtivo(QWidget *parent) : Filtros(parent) {}
 
-FiltroAtivo::FiltroAtivo(QWidget *parent, float ganho, float fInf, float fCent, float fSup, QString tipo) : Filtros(parent) {
+FiltroAtivo::FiltroAtivo(QWidget *parent, double ganho, double fInf, double fCent, double fSup, QString tipo) : Filtros(parent) {
     this->gain_value = ganho;
     this->lower_cut_frequency = fInf;
     this->upper_cut_frequency = fSup;

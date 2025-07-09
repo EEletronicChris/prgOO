@@ -1,4 +1,4 @@
-#include "GraficoFiltroAtivo.h"
+#include "graficofiltroativo.h"
 
 GraficoFiltroAtivo::GraficoFiltroAtivo(QWidget *parent) : FiltroAtivo(parent) {}
 

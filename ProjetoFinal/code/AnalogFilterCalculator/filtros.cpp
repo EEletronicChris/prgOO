@@ -92,7 +92,7 @@ void Filtros::get_filter_type()
 
 void Filtros::get_lower_cut_frequency()
 {
-    lower_cut_frequency = infFreq_edit->text().toFloat();
+    lower_cut_frequency = infFreq_edit->text().toDouble();
 
     qDebug() << "Frequência inferior: " << lower_cut_frequency;
 
@@ -100,14 +100,14 @@ void Filtros::get_lower_cut_frequency()
 
 void Filtros::get_upper_cut_frequency()
 {
-    upper_cut_frequency = supFreq_edit->text().toFloat();
+    upper_cut_frequency = supFreq_edit->text().toDouble();
 
     qDebug() << "Frequência superior: " << upper_cut_frequency;
 }
 
 void Filtros::get_central_frequency()
 {
-    central_frequency = centralFreq_edit->text().toFloat();
+    central_frequency = centralFreq_edit->text().toDouble();
 
     qDebug() << "Frequência central: " << central_frequency;
 }
@@ -148,13 +148,13 @@ void Filtros::confirmarFiltroSelecionado()
     get_central_frequency();
     get_upper_cut_frequency();
     get_lower_cut_frequency();
-    gain_value = gainValue_edit->text().toFloat();
+    gain_value = gainValue_edit->text().toDouble();
 
-    // Verifica se Input é float
+    // Verifica se Input é válido
     if (central_frequency == 0 && (upper_cut_frequency == 0 || lower_cut_frequency == 0)){
-        QMessageBox::about(this,"", "Insira um valor de frequência e/ou ganho válido.");
+        QMessageBox::about(this,"", "Insira valores de frequência válidos.");
     } else if ((filter_type.contains("faixa")) && (upper_cut_frequency < lower_cut_frequency)){
-        QMessageBox::about(this,"", "A frequênia de corte superior deve ser maior que a frequência de corte inferior.");
+        QMessageBox::about(this,"", "A frequência de corte superior deve ser maior que a frequência de corte inferior.");
     } else if ((filter_type.contains("Ativo")) && (gain_value <= 0)){
         QMessageBox::about(this,"", "O ganho deve ser maior que 0.");
     } else {
