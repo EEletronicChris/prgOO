@@ -24,7 +24,7 @@ os graficos dos filtros passa faixa e rejeita faixa ativos.	</li>
 	
 </ol>
 
-## Qt
+## Qt 
 ## << Bibliotecas Utilizadas >>
 
 <strong>QWidget</strong> -
@@ -37,7 +37,7 @@ os graficos dos filtros passa faixa e rejeita faixa ativos.	</li>
 	<p>Permitiu as múltiplas escolhas de filtros.</p>
 <strong>QLineEdit</strong> - 
 	<p>Classe escolhida para captura de entrada do usuário.</p>
-<strong><strong>QLabel</strong> -
+<strong>QLabel</strong> -
 	<p>Permitiu a exibição dos elementos gráficos contidos em um tamanho específico.</p>
 <strong>QMessageBox</strong> -
 	<p>Permite avisos ao usuário sobre o correto uso da aplicação.</p>
