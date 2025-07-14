@@ -1,8 +1,5 @@
 # Análise orientada a objeto
-> [!NOTE]
-> <p>A <strong>análise</strong> orientada a objeto consiste na descrição do 
-> problema a ser tratado, duas primeiras etapas da tabela abaixo, a definição de 
-> casos de uso e a definição do domínio do problema.</p>
+
 
 ## Descrição Geral do domínio do problema
 
@@ -16,6 +13,7 @@ e ainda plotar um gráfico com a resposta em frequência do mesmo. </p>
 	<li> Frequências de corte: Inferior/ Superior/ Central</li>
 	<li> Preferência por componentes: indutores/ capacitores</li>
 	<li> Preferência por cicuito em série ou paralelo</li>
+	<li> Possibilidade de plotar um gráfico de resposta em frequência</li>
 </ul>
 
 ## Diagrama de Casos de Uso

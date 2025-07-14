@@ -1,4 +1,4 @@
-#include "FiltroPassaAlta_ativo.h"
+#include "filtropassaalta_ativo.h"
 
 FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent) : FiltroAtivo(parent) {}
 
@@ -30,7 +30,6 @@ FiltroPassaAlta_ativo::FiltroPassaAlta_ativo(QWidget *parent, double ganho, doub
 
     QPixmap imagem("images/FiltroPassaAlta_ativo.png");
     imageLabel->setPixmap(imagem);
-
 }
 
 void FiltroPassaAlta_ativo::draw_high_pass_active()

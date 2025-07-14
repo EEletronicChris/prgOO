@@ -1,7 +1,6 @@
 #include "graficofiltroativo.h"
-#include <QtMath>
 
-#include <QtCharts/QLogValueAxis>
+#include <QtMath>
 #include <complex>
 
 using namespace std;
@@ -41,7 +40,6 @@ GraficoFiltroAtivo::GraficoFiltroAtivo(QWidget *parent, double resistor_R_value,
     eixoY->setRange(-50, 50);
     eixoY->setTickCount(9);
 }
-
 
 void GraficoFiltroAtivo::draw_graph_passa_alta()
 {

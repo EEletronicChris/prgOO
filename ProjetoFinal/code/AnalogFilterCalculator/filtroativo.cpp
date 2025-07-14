@@ -30,19 +30,16 @@ void FiltroAtivo::filtro_plot_prepare_ativo()
         FiltroPassaBaixa_ativo *filt = new FiltroPassaBaixa_ativo(this, gain_value, central_frequency);
         filt->show();
         filt->components_calc();
-
     }
     if (filter_type == "Filtro Ativo Passa-alta"){
         FiltroPassaAlta_ativo *filt = new FiltroPassaAlta_ativo(this, gain_value, central_frequency);
         filt->show();
         filt->components_calc();
-
     }
     if (filter_type == "Filtro Ativo Rejeita-faixa"){
         FiltroRejeitaFaixa_ativo *filt = new FiltroRejeitaFaixa_ativo(this, gain_value, lower_cut_frequency, upper_cut_frequency);
         filt->show();
         filt->components_calc();
-
     }
     if (filter_type == "Filtro Ativo Passa-faixa"){
         FiltroPassaFaixa_ativo *filt = new FiltroPassaFaixa_ativo(this, gain_value, lower_cut_frequency, upper_cut_frequency);

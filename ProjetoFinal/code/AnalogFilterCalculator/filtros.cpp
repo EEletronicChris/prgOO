@@ -24,7 +24,6 @@ Filtros::Filtros(QWidget *parent):QWidget(parent)
     infFreq_label       = new QLabel("Frequência de corte inferior (Hz):", this);
     gainValue_label     = new QLabel("Ganho:", this);
 
-
     // Posicionamento e tamanho do Widgets
     centralFreq_label->move(10, 90);
     centralFreq_label->resize(180, 30);
@@ -241,8 +240,8 @@ void Filtros::resetarInterface()
     gainValue_edit->clear();
     filtersType_combo->setCurrentIndex(-1);
 
-    lower_cut_frequency = 0;
-    upper_cut_frequency = 0;
-    central_frequency = 0;
-    gain_value = 0;
+    lower_cut_frequency = 0.0;
+    upper_cut_frequency = 0.0;
+    central_frequency = 0.0;
+    gain_value = 0.0;
 }

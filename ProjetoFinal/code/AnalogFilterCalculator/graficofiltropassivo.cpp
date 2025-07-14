@@ -1,7 +1,6 @@
 #include "graficofiltropassivo.h"
-#include <QtMath>
 
-#include <QtCharts/QLogValueAxis>
+#include <QtMath>
 #include <complex>
 
 using namespace std;

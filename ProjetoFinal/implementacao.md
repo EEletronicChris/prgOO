@@ -1,8 +1,5 @@
 # Implementação
 
->[!NOTE] 
->Relatar o processo de implementação do problemas, incluindo as ferramentas e
->bibliotecas utilizadas
 
 ## Passos
 
@@ -21,13 +18,39 @@
 	<li>	Impressão dos circuitos de cada tipo de filtro. </li>
 	<div align="center">commit  edf2824754106bb69edcda634289d844143b556c</div>
 	<li>	Implementação dos labels de valor dos componentes sobre o circuito. </li>
-	
+	<div align="center">commit  cbf9d7a9ea619903c7757d9ad98e5ffe54b882bd</div>
+	<li>	Implementação dos gráficos e botões para chamar gráfico em nova janela. Faltam
+os graficos dos filtros passa faixa e rejeita faixa ativos.	</li>
 	
 </ol>
 
 ## Qt
+## << Bibliotecas Utilizadas >>
 
-## Bibliotecas
+<QWidget>
+	Classe pai do programa, base para todos componentes gráficos.
+<QString>
+	Fornece métodos de manipulação de string.
+<QPushButton>
+	Adiciona botão clicável.
+<QComboBox>
+	Permitiu as múltiplas escolhas de filtros.
+<QLineEdit>
+	Classe escolhida para captura de entrada do usuário.
+<QLabel>
+	Permitiu a exibição dos elementos gráficos contidos em um tamanho específico.
+<QMessageBox>
+	Permite avisos ao usuário sobre o correto uso da aplicação.
+<QPixmap>
+	Classe para manipular imagens.
+<QtMath>
+	Classe matemática própia do Qt.
+<complex>
+	Pemite a manipulação de números complexos.
+<QMainWindow>
+	Permite abrir novas janelas.
+<QtCharts>
+	Classe utilizada para criar os gráficos de resposta em frequência.
 
 <div align="center">
 
