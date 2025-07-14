@@ -25,31 +25,31 @@ os graficos dos filtros passa faixa e rejeita faixa ativos.	</li>
 </ol>
 
 ## Qt
-## << Bibliotecas Utilizadas >>
+##<< Bibliotecas Utilizadas >>
 
-<QWidget>
+<strong>QWidget</strong> -
 	Classe pai do programa, base para todos componentes gráficos.
-<QString>
+<strong>QString</strong> -
 	Fornece métodos de manipulação de string.
-<QPushButton>
+<strong>QPushButton</strong> -
 	Adiciona botão clicável.
-<QComboBox>
+<strong>QComboBox</strong> -
 	Permitiu as múltiplas escolhas de filtros.
-<QLineEdit>
+<strong>QLineEdit</strong> - 
 	Classe escolhida para captura de entrada do usuário.
-<QLabel>
+<strong><strong>QLabel</strong> -
 	Permitiu a exibição dos elementos gráficos contidos em um tamanho específico.
-<QMessageBox>
+<strong>QMessageBox</strong> -
 	Permite avisos ao usuário sobre o correto uso da aplicação.
-<QPixmap>
+<strong>QPixmap</strong> -
 	Classe para manipular imagens.
-<QtMath>
+<strong>QtMath</strong> -
 	Classe matemática própia do Qt.
-<complex>
+<strong>complex</strong> -
 	Pemite a manipulação de números complexos.
-<QMainWindow>
+<strong>QMainWindow</strong> -
 	Permite abrir novas janelas.
-<QtCharts>
+<strong>QtCharts</strong> -
 	Classe utilizada para criar os gráficos de resposta em frequência.
 
 <div align="center">
